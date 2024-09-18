@@ -1,0 +1,175 @@
+<nav class = "navbar navbar-expand-lg menu">
+	<div class = "container">
+	  	<div class = "navbar-nav">
+			<a 
+				class = "menuItem" 
+				href = "/timeline"
+			>
+				Home
+			</a>
+
+			<a
+				class = "menuItem" 
+				href = "/sair"
+			>
+				Sair
+			</a>
+			
+			<img 
+				src = "/assets/images/twitter_logo.png" 
+				class = "menuIco"
+			>
+	  	</div>
+	</div>
+</nav>
+
+<div class = "container mt-5">
+	<div class = "row pt-2">
+		<div class = "col-md-3">
+
+			<div class = "perfil card">
+				<div class = "perfilTopo">
+
+				</div>
+
+				<div class = "perfilPainel">
+					
+					<div class = "row mt-2 mb-2">
+						<div class = "col mb-2">
+							<span class = "perfilPainelNome"> <?= $this -> view -> infoUsuario ['nome'] ?> </span>
+						</div>
+					</div>
+
+					<div class = "row mb-2">
+
+						<div class = "col">
+							<span class = "perfilPainelItem">Tweets</span> <br>
+							<span class = "perfilPainelItemValor"> <?= $this -> view -> totalTweets ['totalTweets']?> </span>
+						</div>
+
+						<div class = "col">
+							<span class = "perfilPainelItem">Seguindo</span> <br>
+							<span class = "perfilPainelItemValor"> <?= $this -> view -> totalASeguir ['totalASeguir']?> </span>
+						</div>
+
+						<div class = "col">
+							<span class = "perfilPainelItem">Seguidores</span> <br>
+							<span class = "perfilPainelItemValor"> <?= $this -> view -> totalSeguidores ['totalSeguidores'] ?> </span>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class = "col-md-6">
+			<div class = "row mb-2">
+				<div class = "col tweetBox card">
+					<form
+                        action = "/tweet"    
+                        method = "post"
+                    >
+						<textarea 
+							name = "tweet"
+							id = "exampleFormControlTextarea1" 
+                            class = "form-control" 
+                            rows = "3"
+                        >
+                        </textarea>
+						
+						<div class = "col mt-2 d-flex justify-content-end">
+							<button 
+                                type = "submit" 
+                                class = "btn btn-primary mt-3"
+                            >
+                                Tweet
+                            </button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+
+			<?php foreach ($this -> view -> tweets as $idTweet => $tweet){ ?>
+			
+			<div class = "row card tweet mt-3">
+				<div class = "col card-body">
+
+					<div class = "row">
+						<div class = "col-9">
+							<p class = card-text> <strong> <?= $tweet ['nome'] ?> </strong> <small class = "text text-muted">- <?= $tweet ['dataTweet']?> </small> </p>
+							<p> <?= $tweet ['tweet'] ?></p>
+						</div>
+	
+						<div class = "col-3">
+							<?php if ($tweet ['idUsuario'] == $_SESSION ['id']) { ?>
+		
+								<div class = "col d-flex justify-content-end">
+									<a 
+										href = "/removerTweet?idTweet=<?=$tweet ['id']?>" 
+										class = "btn btn-danger"
+									>
+										<small>Remover</small>
+									</a>
+								</div>
+		
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+			</div>
+
+            <?php } ?>
+
+			<nav class = 'd-flex justify-content-center mt-3'>
+
+				<ul class = "pagination">
+					<li class = "page-item">
+						<a href = "?pagina=1" class = "page-link">
+							<span>&laquo;</span>
+						</a>
+					</li>
+					
+					<?php for ($i = 1; $i <= $this -> view -> totalPaginas; $i++){ ?>			
+
+						<li class = "
+								page-item
+								<?= $this -> view -> paginaAtiva == $i ? 'active' : '' ?>
+							"
+						>
+							<a href = "?pagina=<?= $i ?>" class = "page-link">
+								<?= $i ?>
+							</a>
+						</li>
+
+					<?php } ?>
+
+					<li class = "page-item">
+						<a href = "?pagina=<?= $this -> view -> totalPaginas ?> " class = "page-link">
+							<span>&raquo;</span>
+						</a>
+					</li>
+				</ul>
+
+			</nav>
+
+		</div>
+		
+		<div class = "col-md-3">
+			<div class = "quemSeguir card">
+                <div class = "mt-3"></div>
+				<span class = "quemSeguirTitulo">Quem seguir</span>
+                <br>
+				<hr>
+				<a 
+                    href = "/quemSeguir" 
+                    class = "quemSeguirTxt"
+                >
+                    Procurar por pessoas conhecidas
+                </a>
+			</div>
+		</div>
+	</div>
+</div>

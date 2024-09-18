@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+    table {
+        border-collapse: separate;
+
+        width: 600px;
+    }
+        tr.alternado
+        {
+            background-color: #efefef;
+        }
+        tr.selecionado:hover {
+            background-color: #c3e6e5;
+        }
+        th, td {
+            
+            padding: 7px;
+        }
+        th {
+            border-top: 1px solid #999;
+            border-bottom: 1px solid #111;
+            
+            text-transform: uppercase;
+            text-align: left;
+            
+            font-size: 90%;
+            letter-spacing: 0.1em;
+        }
+        .numero {
+            text-align: right;
+        }
+        

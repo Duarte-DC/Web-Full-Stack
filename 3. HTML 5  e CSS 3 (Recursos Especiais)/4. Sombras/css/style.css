@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+#caixa {
+    background: #777;
+    color: #111;
+
+    text-align: justify;
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 20px 2px #111;
+    /* box-shadow: (horizontal) (vertical) (opacidade) (espalha a sombra) (cor); */
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    height: 300px;
+    width: 300px;
+
+    margin: 20px;
+    padding: 20px;
+}
+
+    #caixa h1 {
+        color: #fff;
+
+        text-shadow: 5px 5px #1111112d;
+    }

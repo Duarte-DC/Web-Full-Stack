@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+#principal {
+    background: #F2F2F2;
+
+    border: 1px solid #8C8C8C;
+
+}
+    .conteudo {
+        background: #D9D9D9;
+        
+        border: 1px solid #8C8C8C;
+        margin: 10px;
+
+        height: 150px;
+        width: 150px;
+
+        float: left;
+    }
+
+    /*.conteudo1 {
+        background: #8C8C8C;
+
+        border: 1px solid #404040;
+        margin: 10px;
+
+        height: 150px;
+        width: 150px;
+
+        float: left; /*right, left, none*/
+
+    .conteudoZero {
+        background: #8C8C8C;
+
+        border: 1px solid #404040;
+        margin: 10px;
+
+        height: 150px;
+        width: 150px;
+        margin: 10px;
+
+    }
+    p {
+        padding: 20px;
+        text-align: justify;
+    }
+        .clear {
+            clear: both; /*left, right, none, both*/
+        }

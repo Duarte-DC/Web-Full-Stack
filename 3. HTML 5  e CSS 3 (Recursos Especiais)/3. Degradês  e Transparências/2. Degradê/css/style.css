@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+#caixa {
+    /* background: linear-gradient(50deg, #111, #777, blue, red, yellow, green); */
+    background: radial-gradient(#111, #777, blue, red, yellow, green);
+
+    text-align: justify;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    height: 300px;
+    width: 300px;
+
+    padding: 20px;
+    margin: 20px;
+}

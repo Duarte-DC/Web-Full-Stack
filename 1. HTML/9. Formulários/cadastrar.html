@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        
+        <title>Cadastro</title>
+    </head>
+
+    <body>
+
+        <h2>Cadastre-se</h2>
+        <form action = "">
+            Nome: <br>
+            <input type = "text" name = "nome">
+            <br>
+
+            Apelido: <br>
+            <input type = "text" name = "apelido">
+            <br>
+
+            E-mail: <br>
+            <input type = "email" name = "mail" id = "mail"> 
+            
+            <br><br>
+
+            Data de Nascimento: <br>
+            <input type = "date" name = "nascimento" id = "nascimento"> 
+            
+            <br><br>
+
+            Genero: <br>
+            <input type = "radio" name = "genero" id = "genero" value = "M"> Masculino
+            <input type = "radio" name = "genero" id = "genero" value = "F"> Femenino
+
+            <br><br>
+            
+            Ocupação: <br>
+            <select name = "ocupacao" id="ocupacao">
+                <option value = "">Selecionar</option>
+                <option value = "desempregado">Desempregado</option>
+                <option value = "estudante">Estudante</option>
+                <option value = "colaborador">Colaborador</option>
+                <option value = "empreendedor">Empreendedor</option>
+                <option value = "outros">Outra ocupação</option>
+            </select>
+
+            <br><br>
+
+            Palavra-Passe: <br>
+            <input type = "password" name = "palavraPasse">
+            <br>
+            
+            Confirmar Palavra-Passe: <br>
+            <input type = "password" name = "palavraPasse">
+
+            <br><br>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Voluptatum autem ullam blanditiis? Deserunt doloremque veniam non ratione voluptate, 
+            illum debitis repellendus alias, pariatur similique in accusamus dolorum dolorem. Enim, tenetur?
+            </p>
+
+            <input type = "checkbox" name = "termos" id = "termos"> Aceitar Termos e Condições
+            
+            <br><br>
+
+            <input type = "submit" value = "Submeter">
+            <input type = "reset" value = "Apagar Dados">
+            
+            <br>
+            <a href = "index.html">Já possui uma conta?</a>
+        </form>
+
+    </body>
+
+</html>

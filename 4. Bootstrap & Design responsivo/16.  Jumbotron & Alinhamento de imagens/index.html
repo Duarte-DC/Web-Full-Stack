@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Jumbotron & Alinhamento de imagens</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body class = "mx-auto">
+        <!-- Jumbotron -->
+        <h3 class = "border-botton">Jumbotron</h3>
+        <div class = "border rounded p-5 text-center" style = "background: #99999986;">
+            <h1 class = "display-2">Música para todos.</h1>
+            <p class = "lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsa cupiditate beatae quo laborum repudiandae repellendus consequatur quaerat. 
+                Facilis eveniet hic voluptas adipisci!
+            </p>
+            <hr>
+            <p>
+                Molestias sequi, corporis necessitatibus alias hic obcaecati qui nobis optio.</span>
+            </p>
+            <a href = "" class = "btn btn-primary">Leia mais</a>
+        </div>
+
+        <br><br>
+
+        <!-- Alinhamento de imagens -->
+        <h3 class = "border-bottom">Alinhamento nas laterais</h3>
+        <div class = "clearfix">
+            <img src = "assets/images/imagem1.jpg" alt = "" class = "rounded float-start" style = "max-width: 200px;">
+            <img src = "assets/images/imagem1.jpg" alt = "" class = "rounded float-end" style = "max-width: 200px;">
+            </div>
+            
+            <br><br>
+
+        <!-- ALinhamento ao centro -->
+        <h3 class = "border-bottom">Alinhamento ao centro</h3>
+        <div class = "clearfix">
+            <img src = "assets/images/imagem1.jpg" alt = "" class = "rounded mx-auto d-block" style = "max-width: 200px;">
+        </div>
+
+        <br><br>
+
+        <!-- 
+            Alinhamento na horizonal 
+            » align-self-<opção>
+                - opcções: start, center, end
+        -->
+        <h3 class = "border-bottom">Miniaturas de imagens</h3>
+        <div class = "d-flex mx-auto" style = "width: 800px;">
+            <img src = "assets/images/imagem1.jpg" alt = "" class = "img-thumbnail align-self-center" style = "width: 30%; height: 30%;">
+            <div class = "ms-3">
+                <h5 class = "mt-4 mb-3"></h5>
+                <p class = "">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi ipsam, officiis corporis consequatur nesciunt dicta omnis delectus 
+                    ipsum quibusdam tenetur repudiandae sapiente perspiciatis. 
+                    Porro exercitationem ipsum nemo esse omnis aspernatur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ad enim consectetur dicta dignissimos magnam? 
+                    Officia minima cum reprehenderit soluta nam provident nostrum, 
+                    autem quis quod explicabo et cupiditate corrupti quo?
+                    Consectetur molestias pariatur adipisci repudiandae sit aliquam 
+                    voluptas necessitatibus debitis officia? Voluptas delectus 
+                    laboriosam sed rerum optio quod expedita sit repellendus, 
+                    animi rem nobis, nemo, corporis odit eius molestias et.
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Imagem responsiva -->
+        <h3 class = "border-bottom">Imagem responsiva</h3>
+        <div class = "">
+            <img src = "assets/images/imagem1.jpg" alt = "" class = "img-fluid">
+            <div class = "">
+                <h5 class = "mt-4 mb-3">Título do conteúdo</h5>
+                <p class = "">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium rem ea necessitatibus, corrupti, modi dolorem odio veniam 
+                    impedit incidunt libero quos vitae iure dicta exercitationem fugit 
+                    accusantium eius velit unde!
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Miniaturas de imagens -->
+        <h3 class = "border-bottom">Miniaturas de imagens</h3>
+        <div class = "d-flex">
+            <img src = "assets/images/imagem1.jpg" alt = "" class = "img-thumbnail" style = "max-width: 200px;">
+            <div class = "ms-3">
+                <h5 class = "mt-4 mb-3"></h5>
+                <p class = "">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sequi ipsam, officiis corporis consequatur nesciunt dicta omnis delectus 
+                    ipsum quibusdam tenetur repudiandae sapiente perspiciatis. 
+                    Porro exercitationem ipsum nemo esse omnis aspernatur!
+                </p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Listas com imagens -->
+        <h3 class = "border-bottom">Listas com imagens</h3>
+        <ul class = "list-unstyled">
+            <li class = "d-flex border-bottom py-3">
+                <img src = "assets/images/imagem1.jpg" alt = "" class = "align-self-center" style = "width: 25%; height: 25%;">
+                <div class = "ms-3">
+                    <h5 class = "">Titulo do conteudo</h5>
+                    <p class = "m-0">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Ullam non inventore exercitationem consectetur atque temporibus 
+                        aliquam eum dicta recusandae ipsa! Suscipit quod harum 
+                        inventore explicabo dolores architecto recusandae ullam odio.
+                    </p>
+                </div>
+            </li>
+            <li class = "d-flex py-3">
+                <img src = "assets/images/imagem1.jpg" alt = "" class = "align-self-center" style = "width: 25%; height: 25%;">
+                <div class = "ms-3">
+                <a href = "" class = "text-dark" style = "text-decoration: none;">
+                    <h5 class = "">Titulo do conteudo</h5>
+                    <p class = "m-0">
+src                        Ullam non inventore exercitationem consectetur atque temporibus 
+                        aliquam eum dicta recusandae ipsa! Suscipit quod harum 
+                        inventore explicabo dolores architecto recusandae ullam odio.
+                    </p>
+                </a>
+                </div>
+            </li>
+        </ul>
+        <a href="">
+
+        </a>
+        
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

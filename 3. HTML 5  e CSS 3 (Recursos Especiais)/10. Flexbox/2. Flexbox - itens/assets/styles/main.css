@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+#conteudo {
+    background: #dcdcdc;
+
+    height: 600px;
+
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+        /* itens */
+}
+    .item {
+        border: 1px solid #777;
+        background: white;
+        
+        height: 100px;
+        /* width: 200px; */
+
+        margin: 10px;
+
+        /*  Define a proporção de espaço ocupado por um item 
+            - Quanto maior o número, maior é o espaço que ele ocupa*/
+        flex-grow: 0;
+        -ms-flex-positive: 0;
+        -webkit-box-flex: 0;
+
+        /*  Define a capacidade de redução de tamanho do item 
+            - Quanto maior for o número, menor é o espaço que ela ocupa */
+        flex-shrink: 1;
+        -ms-flex-negative: 1;
+
+        /*  Indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+        flex-basis: 100px;
+        -ms-flex-preferred-size: 100px;
+    }
+
+    .item1 {
+        flex-grow: 0;
+        -ms-flex-positive: 0;
+        -webkit-box-flex: 0;
+
+        /* flex-shrink: 1; */
+    }
+    .item2 {
+        flex-grow: 1;
+        -ms-flex-positive: 1;
+        -webkit-box-flex: 1;
+
+        /* flex-shrink: 2; */
+    }
+    .item3 {
+        flex-grow: 2;
+        -ms-flex-positive: 2;
+        -webkit-box-flex: 2;
+
+        /* flex-shrink: 5; */
+    }
+
+    .ordem {
+        order: -1;
+    }
+    .ordem1 {
+        order: 1;
+    }
+    .ordem2 {
+        order: 2;
+    }
+    .ordem3 {
+        order: 3;
+    }
+    .ordem4 {
+        order: 4;
+    }

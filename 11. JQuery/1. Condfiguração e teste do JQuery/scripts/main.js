@@ -1,0 +1,1 @@
+$('h3') . html ('A biblioteca JQuery está a funcionar!')

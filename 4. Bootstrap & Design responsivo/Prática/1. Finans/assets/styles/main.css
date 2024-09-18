@@ -1,0 +1,12 @@
+@charset "utf-8";
+#home {
+    background: #ffc107;
+
+    color: #fff;
+}
+.caixa {
+    border-bottom: 1px solid #e5e5e5;
+    
+    padding: 60px 0;
+
+}

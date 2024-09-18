@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Paginação</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body>
+        
+    <!-- 
+        Paginação:
+        » pagination
+        » page-item
+        » page-link
+        » <active/disabled>
+    -->
+        <h4>Paginação</h4>
+        <nav>
+            <ul class = "pagination">
+                <li class = "page-item"> <a href = "" class = "page-link disabled">Anterior</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link active">1</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">2</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">Próximo</a> </li>
+            </ul>
+        </nav>
+
+        <br><br>
+
+        <!-- Alinhamento: justify-content-<center/end> -->
+        <h4>Alinhamento</h4>
+        <nav>
+            <ul class = "pagination justify-content-center">
+                <li class = "page-item"> <a href = "" class = "page-link">Anterior</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">1</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">2</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">Próximo</a> </li>
+            </ul>
+        </nav>
+
+        <br><br>
+
+        <!-- Tamanho: pagination-<sm / lg> -->
+        <h4>Tamanho</h4>
+        <nav>
+            <ul class = "pagination pagination-sm justify-content-end">
+                <li class = "page-item"> <a href = "" class = "page-link">Anterior</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">1</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">2</a> </li>
+                <li class = "page-item"> <a href = "" class = "page-link">Próximo</a> </li>
+            </ul>
+        </nav>
+
+        <br><br>
+
+        <!-- Setas -->
+        <h4>Setas</h4>
+        <nav>
+            <ul class = "pagination justify-content-center">
+                <li class = "page-item"> 
+                    <a href = "" class = "page-link" aria-label = "Anterior">
+                        <span aria-hidden = "true">&laquo;</span>
+                    </a> 
+                </li>
+                <li class = "page-item"> 
+                    <a href = "" class = "page-link">1</a> 
+                </li>
+                <li class = "page-item"> 
+                    <a href = "" class = "page-link">2</a> 
+                </li>
+                <li class = "page-item"> 
+                    <a href = "" class = "page-link" aria-label = "Próximo">
+                        <span aria-hidden = "true">&raquo;</span>
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+
+        <br><br>
+
+        <a href = "index.html">Tabelas</a>
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

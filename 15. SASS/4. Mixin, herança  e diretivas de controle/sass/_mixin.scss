@@ -1,0 +1,25 @@
+@mixin titulo ($background) {
+    background: $background;
+    color: white;
+    padding: 10px 5px;
+}
+
+@mixin tema ($tema: padrao) {
+
+    @if ($tema == natal) {
+
+        background: red;
+        color: white;
+
+    }   @else if ($tema == blackFriday) {
+
+            background: black;
+            color: white;
+            
+        }   @else {
+
+                background: white;
+                color: black;
+            }
+
+}

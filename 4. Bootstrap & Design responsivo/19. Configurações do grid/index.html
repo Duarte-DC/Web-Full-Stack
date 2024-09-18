@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Configurações do grid</title>
+        
+        <script src = "scripts/flexibility.js"></script>
+        <script src = "https://kit.fontawesome.com/e33cdef215.js" crossorigin = "anonymous"></script>
+    </head>
+
+    <body>
+        <div class = "container marcador-container">
+        <!-- Largua fixa -->
+            <h2>Largura fixa</h2>
+            <div class = "row">
+                <div class = "col marcador">Área 1</div>
+                <div class = "col marcador">Área 2</div>
+                <div class = "col marcador">Área 3</div>
+                <div class = "col marcador">Área 4</div>
+            </div>
+
+        <!-- Larguta automatica -->
+            <h2>Largura automática (auto-layout)</h2>
+            <div class = "row">
+                <div class = "col-4 marcador">área 1</div>
+                <div class = "col marcador">área 3</div>
+                <div class = "col-6 marcador">área 4</div>
+            </div>
+
+        <!-- Largura igual empilhada -->
+            <h2>Largura igual empilhada</h2>
+            <div class = "row">
+                <div class = "col-md marcador">área 1</div>
+                <div class = "col-md marcador">área 2</div>
+                <div class = "col-md marcador">área 3</div>
+                <div class = "col-md marcador">área 4</div>
+            </div>
+
+        <!-- Ordenado -->
+            <h2>Ordenado</h2>
+            <div class = "row">
+                <div class = "col-md-3 marcador order-4">área 1</div>
+                <div class = "col-md-3 marcador order-3">área 2</div>
+                <div class = "col-md-3 marcador order-2">área 3</div>
+                <div class = "col-md-3 marcador order-1">área 4</div>
+            </div>
+
+        <!-- Offset (espaçamentos entre elementos) -->
+            <h2>Offset</h2>
+            <div class = "row">
+                <div class = "col-sm-12 col-md-6 offset-md-3 marcador">Login...</div>
+            </div>
+
+        <!-- Offset multiplos alinhamentos -->
+            <h2>Offset múltiplos alinhamentos</h2>
+            <div class = "row">
+                <div class = "marcador col-md-3 offset-md-2">Conteudo 1</div>
+                <div class = "marcador col-md-3 offset-md-2">Conteudo 2</div>
+            </div>
+
+        <!-- Aninhamento -->
+            <h2>Aninhamento</h2>
+            <div class = "row">
+                <div class = "col-md-6 marcador-simples">
+                    COL-MD-3
+                    <div class = "row">
+                        <div class = "col-md-6 marcador">Conteudo 1</div>
+                        <div class = "col-md-6 marcador">Conteudo 2</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

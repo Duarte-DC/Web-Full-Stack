@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* Especificidade */
+
+/* exceção !important */
+p {
+    color: blue !important;
+}
+p {
+    color: red;
+}
+
+ /* 
+    Se um seletor for mais específico que o outro a regra mais específica será aplicada
+    (terá precedência sobre regras mais gerais) 
+*/
+* {
+    color: red;
+}
+h2 {
+    /* o h2 é mais específico que o * */
+    color: black;
+}
+h2.titulo {
+    /* o h2.titulo é mais específico que o h2 */
+    color: forestgreen;
+}
+h2#tituloEspecifico {
+    /* o h2#tituloEspecífico é mais específico que o h2.titulo */
+    color: chartreuse;
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#caixa1 {
+    background: #777;
+    color: #111;
+
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+
+    height: 300px;
+    width: 300px;
+
+    margin: 10px;
+    padding: 10px;
+}
+
+#caixa2 {
+    background: #111;
+    color: #777;
+
+    border-radius: 10px 50px 80px 100px;
+    -moz-border-radius: 10px 50px 80px 100px;
+    -webkit-border-radius: 10px 50px 80px 100px;
+
+    height: 300px;
+    width: 300px;
+
+    margin: 10px;
+    padding: 10px;
+}

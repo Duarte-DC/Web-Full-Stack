@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+ul {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+}
+    #navegacao a {
+        color: #000;
+        background: #f7b200 url(../imagens/menu.png) no-repeat left bottom;
+        
+        text-decoration: none;
+        text-indent: 40px;
+        line-height: 40px;
+
+        width: 200px;
+        height: 40px;
+        
+        display: block;
+    }
+    a:hover {
+        color: #fff;
+        background-position: right bottom;
+        background-color: #f99200;
+    }
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#servicos #navegacao .servicos a,
+#noticias #navegacao .noticias a,
+#contacto #navegacao .contacto a {
+    color: #fff;
+    background-position: right bottom;
+    background-color: #f99200;
+}

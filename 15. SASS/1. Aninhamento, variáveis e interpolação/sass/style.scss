@@ -1,0 +1,70 @@
+/*  Aninhamento  */
+
+// #conteudo {
+//     background-color: green;
+//     padding: 15px;
+
+//     h1, h2 {
+//         color: black;
+//     }
+//     a {
+//         color: red;
+//     }
+// }
+
+/*  Referenciar selector pai  */
+
+// #conteudo {
+//     background-color: green;
+//     padding: 15px;
+
+//     h1, h2 {
+//         color: black;
+//     }
+
+//     a {
+//         color: red;
+
+//         &:hover {
+//             color: yellow;
+//         }
+//     }
+// }
+
+/*  Variaveis  */
+$corFundo: #ccc;
+$corTitulo: hsl(0, 0%, 47%);
+$corLink: red;
+$corSubtitulo: blue;
+
+#conteudo {
+    background-color: $corFundo;
+    padding: 15px;
+
+    h1, h2 {
+        color: $corTitulo;
+    }
+    a {
+        color: $corLink;
+    }
+}
+
+/*  Escopo de variaveis (Onde a variavel é reconhecida)  */
+
+#rodape {
+    $corFundo: green !global;
+
+    background-color: $corFundo;
+}
+
+h2 {
+    color: $corFundo;
+}
+
+/*  Interpolação  */
+$classe: red;
+$color: color;
+
+.#{$classe} {
+    #{$color}: $classe;
+}

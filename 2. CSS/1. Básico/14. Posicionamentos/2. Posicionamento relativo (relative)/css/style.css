@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+    background: #007fc7;
+}
+    #container {
+        background: #fff;
+        width: 800px;
+
+        margin: 10px auto; /*para centralizar o container*/
+        padding: 10px;
+    }
+    .titulo {
+        position: static;
+    }
+    p {
+        width: 300px;
+
+        text-align: justify;
+    }
+    .relative {
+        position: relative;
+        /*
+            top, right, bottom e left
+
+            deslocamento com base na posição inicial
+        */
+        top: 0px;
+        left: 350px;
+    }

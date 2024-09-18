@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Navegação & Modelo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+  [fullscreen] = "true"
+  class = "ion-padding"
+>
+  <h1>Navegação</h1>
+
+  <ion-button 
+    (click) = "abrirBotoes ()"
+    expand = "full"
+  >
+    Botões
+  </ion-button>
+
+  <ion-button 
+    (click) = "abrirLista ()"
+    expand = "full"
+  >
+    Lista
+  </ion-button>
+
+  <br> <br> <br>
+
+  <h1>Modelos</h1>
+
+  <ion-item>
+    <ion-input
+      label = "Digite sua pesquisa:"
+      labelPlacement = "floating"
+      type = "search"
+      [(ngModel)] = "pesquisa"
+    >
+    </ion-input>
+
+    <ion-button
+      color = "success"
+      (click) = "recuperar ()"
+    >
+      Pesquisar
+    </ion-button>
+  </ion-item>
+
+  <br>
+  <ion-list 
+    *ngIf = "resultado"
+    class = "ion-padding"
+  >
+
+  </ion-list>
+    
+  
+</ion-content>

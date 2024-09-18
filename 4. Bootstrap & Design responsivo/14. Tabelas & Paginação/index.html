@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title></title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body>
+    <!-- Tabelas -->
+        <h1>Tabelas</h1>
+
+        <br>
+
+        <h4>Tabela simples</h4>
+        <table class = "table">
+            <thead>
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <!-- Tabela escura: table-dark -->
+        <h4>Tabela escura</h4>
+        <table class = "table table-dark">
+            <thead>
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <!-- Tabela com cabeçalho escuro: thead-dark -->
+        <h4>Tabela com cabeçalho escuro</h4>
+        <table class = "table">
+            <thead class = "table-dark">
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot class = "table-dark">
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <!-- 
+            Tabela com formatações:
+            » table-striped
+            » table-bordered 
+            » table-borderless 
+        -->
+        <h4>Tabela com formatações</h4>
+        <table class = "table table-striped table-borderless">
+            <thead>
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <!-- Tabela com linha pairaveis: table-hover -->
+        <h4>Tabela com linhas pairaveis</h4>
+        <table class = "table table-hover">
+            <thead>
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <!-- 
+            Tabela com classes contextuais 
+            » table-success, table-danger, table...
+        -->
+        <h4>Tabela com classes contextuais</h4>
+        <table class = "table">
+            <thead>
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class = "table-success">
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr class = "table-danger">
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr class = "table-warning">
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <!-- Tabela pequena: table-sm -->
+        <h4>Tabela pequena</h4>
+        <table class = "table table-dark table-borderless table-striped table-sm">
+            <thead>
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+
+        <!-- Tabela responsiva: table-responsive -->
+        <h4>Tabela responsiva</h4>
+
+        <div class = "table-responsive">
+            <table class = "table align-middle">
+                <thead>
+                    <tr>
+                        <th scope = "col">#</th>
+                        <th scope = "col">Produto</th>
+                        <th scope = "col">Marca</th>
+                        <th scope = "col">Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope = "row">001</th>
+                        <td>Iphone 15 pro</td>
+                        <td>Apple</td>
+                        <td>89.000 ,00MT</td>
+                    </tr>
+                    <tr>
+                        <th scope = "row">002</th>
+                        <td>MacBook Pro 2023</td>
+                        <td>Apple</td>
+                        <td>250.000 ,00MT</td>
+                    </tr>
+                    <tr>
+                        <th scope = "row">003</th>
+                        <td colspan = "2">Asus VivoBook s15UA</td>
+                        <td>45.000 ,00MT</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope = "row" colspan = "3">Total</th>
+                        <td> <strong>384.000 ,00MT</strong> </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <br><br>
+
+        <!-- 
+            Tabelas com legenda: caption 
+            » opção: caption-top 
+        -->
+        <h4>Tabela com legenda</h4>
+        <table class = "table table-sm caption-top">
+
+            <caption>Lista de produtos</caption>
+            
+            <thead>
+                <tr>
+                    <th scope = "col">#</th>
+                    <th scope = "col">Produto</th>
+                    <th scope = "col">Marca</th>
+                    <th scope = "col">Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope = "row">001</th>
+                    <td>Iphone 15 pro</td>
+                    <td>Apple</td>
+                    <td>89.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">002</th>
+                    <td>MacBook Pro 2023</td>
+                    <td>Apple</td>
+                    <td>250.000 ,00MT</td>
+                </tr>
+                <tr>
+                    <th scope = "row">003</th>
+                    <td colspan = "2">Asus VivoBook s15UA</td>
+                    <td>45.000 ,00MT</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row" colspan = "3">Total</th>
+                    <td> <strong>384.000 ,00MT</strong> </td>
+                </tr>
+            </tfoot>
+        </table>
+        
+        <br><br>
+        
+        <a href = "paginacao.html">Paginação</a>
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

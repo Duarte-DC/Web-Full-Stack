@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Alertas e Barra de progresso</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body>
+    <!-- Alertas -->
+        <h2>Alertas</h2>
+        <div class = "alert alert-primary"><strong>Primary</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class = "alert alert-secondary"><strong>Secondary</strong> Dolorem sapiente consequuntur ullam?</div>
+        <div class = "alert alert-success"><strong>Success</strong> Beatae a voluptatum, sint, rem nostrum ducimus </div>
+        <div class = "alert alert-danger"><strong>Danger</strong> Accusantium neque numquam ad quam itaque explicabo?</div>
+        <div class = "alert alert-warning"><strong>Warning</strong> Nobis quidem fugiat temporibus eius explicabo id aliquid ea</div>
+        <div class = "alert alert-info"><strong>Info</strong> Nihil magnam odio ipsam adipisci labore esse debitis</div>
+        <div class = "alert alert-light"><strong>Light</strong> Nam nemo deleniti quod minima quisquam </div>
+        <div class = "alert alert-dark"><strong>Dark</strong> Quis! Neque impedit cum dicta ipsa distinctio!</div>
+
+        <br></br>
+
+    <!-- Alerta com botão -->
+        <h2>Alerta com botão fechar</h2>
+        <div class = "alert alert-success alert-dismissible fade show">
+            <button type = "button" class = "btn-close" data-bs-dismiss = "alert"> &times; </button>
+            <strong>Fechar</strong> Alerta com botão fechar
+        </div>
+
+        <br><br>
+
+    <!-- Alerta com mais conteudos -->
+        <h2>Alerta com mais conteudos</h2>
+        <div class = "alert alert-dark">
+            <h4>Titulo</h4>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Illo sed voluptate itaque aspernatur natus vel excepturi similique 
+                alias eligendi. Consequuntur, voluptatibus atque? Esse est, quibusdam 
+                minus commodi libero ex nostrum.
+            </p>
+            <hr>
+            <p>
+                Accusamus deleniti cumque nam dolorum earum itaque et saepe dolor, 
+                in officia, libero quis mollitia reiciendis corporis explicabo minus! 
+                Deleniti, maxime? Iusto, quisquam. Laudantium minima nisi impedit sunt 
+                totam doloremque.
+            </p>
+        </div>
+
+    <!-- Barra de progresso -->
+        <h2>Barra de progresso</h2>
+        <div class = "progress">
+            <div class = "progress-bar w-0"></div>
+        </div>
+        <div class = "progress mt-3">
+            <div class = "progress-bar bg-success w-25"></div>
+        </div>
+        <div class = "progress mt-3">
+            <div class = "progress-bar bg-info w-50"></div>
+        </div>
+        <div class = "progress mt-3">
+            <div class = "progress-bar bg-warning w-75"></div>
+        </div>
+        <div class = "progress mt-3">
+            <div class = "progress-bar bg-danger w-100"></div>
+        </div>
+
+        <br><br>
+
+        <!-- ALtura -->
+        <h2>Altura</h2>
+        <div class = "progress" style = "height: 1px;">
+            <div class = "progress-bar w-25""></div>
+        </div>
+        <div class = "progress mt-3" style = "height: 2opx;">
+            <div class = "progress-bar w-25""></div>
+        </div>
+
+        <br><br>
+
+        <!-- Etiquetas -->
+        <h2>Etiquetas</h2>
+        <div class = "progress">
+            <div class = "progress-bar w-50"">50%</div>
+        </div>
+
+        <br><br>
+
+        <!-- Listrado -->
+        <h2>Listrado</h2>
+        <div class = "progress">
+            <div class = "progress-bar progress-bar-striped w-50""></div>
+        </div>
+
+        <br><br>
+
+        <!-- Listras animadas -->
+        <h2>Listras animadas</h2>
+        <div class = "progress">
+            <div class = "progress-bar progress-bar-striped progress-bar-animated w-50"">A carregar...</div>
+        </div>
+
+        <br><br>
+
+        <!-- Multiplas Barras -->
+        <h2>Multiplas barras</h2>
+        <div class="progress-stacked">
+            <div class="progress" style = "width: 15%;">
+                <div class="progress-bar bg-danger"></div>
+            </div>
+            <div class="progress" style = "width: 50%;">
+                <div class="progress-bar bg-success"></div>
+            </div>
+            <div class="progress" style = "width: 35%;">
+                <div class="progress-bar bg-warning"></div>
+            </div>
+        </div>
+
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

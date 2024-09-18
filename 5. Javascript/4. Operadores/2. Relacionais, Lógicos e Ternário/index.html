@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!-- Bootstrap CSS --> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!-- Favicon --> <link rel = "shortcut icon" href = "" type = "image/x-icon">
+        <!-- Normalize CSS --> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        <!-- Style CSS --> <link rel = "stylesheet" href = "assets/styles/main.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Flexibility --> <script src = "scripts/flexibility.js"></script>
+        <!-- Icons --> <script src = "https://kit.fontawesome.com/e33cdef215.js" crossorigin = "anonymous"></script>
+        
+        <title></title>
+    </head>
+    
+    <body>
+        <!--                   ------                   < Javascript >                   ------                   -->
+        <script>
+            /*
+            Operadores Relacionais
+                Retornam valores boleanos 
+
+                    > Maior
+                        exemplo: 5 > 2 
+                                retorna: true
+
+                    < Menor
+                        exemplo: 7 < 4
+                                retorna: false
+
+                    >= Maior ou Igual
+                        exemplo: 8 >= 8 
+                                retorna: true
+
+                    <= Menor ou Igual
+                        exemplo: 9 <= 7
+                                retorna: false
+
+                    == Igual » verifica se os valores comparados são iguais
+                        exemplo: 5 == 5
+                                retorna: true
+
+                    != Diferente » verifica se os valores comparados são diferentes
+                        exemplo: 4 != 4
+                                retorna: false
+
+                Operador Relacional de identidade
+
+                    === Igualidade Restrita » verifica se os valores comparados são iguais e do mesmo tipo
+                        exemplo 1: 5 === '5'
+                                retorna: false
+
+                        exemplo 2: 5 === 5
+                                retorna: true
+                    
+                    !== Desigual Restrito » verifica se os valores são diferentes e de tipos diferentes
+                        exemplo 1: 5 !== '5'
+                                retorna: true
+
+                        exemplo 2: 5 !== 5
+                                retorna: false
+            */
+           var preco = 200.5
+           document.write (`O preco e maior ou igual a 200.5? <strong>${preco >= 200.5}</strong><br/>`)
+
+           var idade = 24
+           document.write (`O senhor e menor de 18? <strong>${idade < 18}</strong><br/>`)
+
+           var curso = 'JavaScript'
+           document.write (`O curso e Javascript? <strong>${curso == "JavaScript"}</strong><br/>`)
+
+           var numero1 = preco
+           var numero2 = Number (prompt ('Insira o preco:'))
+           document.write (`O numero inserido e diferente do preco? <strong>${numero1 != numero2}</strong><br/>`)
+
+            /*
+            Operadores logicos
+
+                ! Negação
+                    Operador unário, só tem 1 operando
+                    exemplo: !true
+                            retorna: false
+
+                             !false
+                            retorna: true 
+
+                && E
+                    Operador binário, com 2 valores logicos
+                        - para que o operador retorne verdadeiro as duas condições precisam ser verdadeiras
+                    exemplo: true && true
+                            retorna: true
+
+                             true && false
+                            retorna: false
+
+                             false && true
+                            retorna: false
+
+                             false && false
+                            retorna: false
+.
+
+                || Ou
+                    Operador binário
+                        - o operador retorna verdadeiro desde que uma das condições seja verdadeira
+                    exemplo: true || true
+                            retorna: true
+
+                             true || false
+                            retorna: true
+
+                             false || true
+                            retorna: true
+
+                             false || false
+                            retorna: false
+
+                Exemplos Práticos
+                    exemplo 1: idade >= 15 && idade <= 17 (A idade está entre 15 e 17?)
+                    exemolo 2: provinvia == 'Maputo' || provincia == 'Beira' (Provincia de Maputo ou da Beira)
+                    exemplo 3: salário > 1500 && sexo != 'M' (Salário é maior que 1500 e Sexo diferente de M)
+            */
+            var cor1 = 'azul'
+            var cor2 = 'vermelho'
+
+            document.write (`${cor1}<br/> A primeira cor não é de cor Azul? <strong>${!cor1 == 'azul'}</strong><br/>`)
+
+            document.write (`Preciso de duas canetas, uma azul e uma vermelha<br/> 
+                            As canetas recebidas são das cores pretendidas?: <strong>${cor1 == 'azul' && cor2 == 'preto'}</strong><br/>`)
+
+            document.write (`Preciso de duas canetas de cores diferentes, tem que ter vermelha, azul ou as 2 <br/>
+                            As canetas recebidas são as cores pretendidas?: <strong>${cor1 == 'azul' || cor2 == 'vermelha'}</strong><br/>`)
+            
+            
+            /*
+            Operador Ternário
+                - Junta 3 operandos
+                teste ? true : false
+                
+                    exemolo 1: media >= 10 ? "APROVADO" : "REPROVADO"
+                            - se sim retorna APROVADO
+                            - se não retorna REPROVADO
+
+                    exemplo 2: var resp = media % 2 == 0 ? 5 : 9 
+                            (2 resto de divisão da media é igual a 0)
+                            - se sim retorna 5
+                            - se não retorna 9
+
+                    exemplo 3: var idade = 24
+                            idade >= 18 ? "MAIOR DE IDADE" : "MENOR DE IDADE"
+                            - se sim retorna MAIOR DE IDADE
+                            - se não retorna MENOR DE IDADE
+            */        
+            var media = 9.9
+            
+            document.write (`Qual e a situacao do aluno com a media ${media}?: <strong>${media >= 10 ? "Aprovado" : "Reprovado"}</strong>`)
+            /*
+            Ordem de precedência
+                1º Aritiméticos
+                2º Relacionais
+                3º !
+                4º &&
+                5º ||
+            */
+        </script>
+
+        <!-- Bootstrap Javascript -->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin = "anonymous">
+        </script>
+        
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

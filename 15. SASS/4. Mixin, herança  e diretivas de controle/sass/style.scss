@@ -1,0 +1,73 @@
+/*  Mixin  */ 
+@import 'mixin';
+
+h1 {
+    @include titulo (green);    
+}
+
+h2 {
+    @include titulo (black);
+}
+
+
+/*  -------------------------------------------------------------------------------  
+    Herança 
+        »   Multiplas diretivas 
+*/
+.classe1 {
+    color: #777;
+}
+.classe2 {
+    padding: 10px;
+    background: #333;
+}
+
+.cinzento {
+    @extend .classe1;
+    @extend .classe2;
+}
+
+
+/*
+        »   Encandeamento de diretivas
+            »   Placeholders (%)
+*/
+%pai {
+    color: red;
+}
+%filho {
+    @extend %pai;
+    background: #333;
+}
+.erro {
+    @extend %filho;
+
+    border: 1px solid red;
+
+    padding: 10px;
+}
+
+/*  -------------------------------------------------------------------------------
+    Diretivas de controle
+*/
+$cor: black;
+@if ($cor == green) {
+    p {
+        color: $cor;
+    }
+}   @else if ($cor == red) {
+        p { 
+            color: $cor;
+        }
+    }   @else {
+            p {
+                color: black;
+            }
+        }
+
+/*
+    »   Diretivas de controle e Mixins
+*/
+body {
+    @include tema (blackFriday);
+}

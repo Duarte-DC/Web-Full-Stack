@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+    ul {
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+
+        width: 720px;
+    }
+        ul li {
+            background: url(../imagens/aba-direita.png) no-repeat top right;
+
+            float: left;
+        }
+            li a {
+                color: #fff;
+                background: url(../imagens/aba-esquerda.png) no-repeat top left;
+                
+                text-decoration: none;
+
+                padding: 0 2em;
+                line-height: 3em;
+
+                display: block;
+            }
+            li a:hover {
+                color: #894a1f;
+            }
+        ul #atual {
+            background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+        }
+            #atual a {
+                color: #894a1f;
+                background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+            }
+    div {
+        clear: both;
+
+        padding-top: 20px;
+    }  
+        div p {
+            text-align: justify;
+        }

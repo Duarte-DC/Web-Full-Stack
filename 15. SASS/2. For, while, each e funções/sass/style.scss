@@ -1,0 +1,89 @@
+/*  
+    For  
+    »   through
+        ex: @for $i form 1 through 4    »   vai de 1 até ao 4
+
+    »   to
+        ex: @for $i from 1 to 4    »    vai de 1 até ao 3 sem contar o 4
+*/
+// @for $i from 1 through 2 {
+
+//     .item-#{$i} {
+
+//         background: green;
+//         margin-bottom: 2px;
+//     } 
+// }
+
+
+/*While*/
+// $contador: 2;
+
+// @while ($contador <= 4) {
+
+//     $contador: $contador + 1;
+
+//     .item-#{$contador} {
+
+//         background-color: blue;
+
+//         margin-bottom: 2px;
+//         padding: 10px;
+//     }
+// }
+
+/* Each */
+// $lista: green, yellow, red, blue;
+// $padding:10px, 20px, 30px;
+// $contador: 1;
+
+// @each $cor in $lista {
+
+//     .item-#{$contador} {
+
+//         background: $cor;
+//     }
+//     $contador: $contador + 1;
+// }
+
+/*  Funções  */
+$total: 12;
+
+@function largura-coluuna($coluna) {
+
+
+    @return percentage($coluna/$total);
+
+}
+
+@for $i from 1 through $total {
+    .col-#{$i} {
+
+        width: largura-coluuna($i);
+        background-color: green;
+    }
+
+    .margin {
+        border-radius: 15px;
+        
+        margin: auto;
+        padding: 10px;
+    
+        p {
+            display: flex;
+    
+            justify-content: center;
+    
+            align-items: center;
+        }
+    }
+}
+
+/*  Outras funções  */
+
+.alerta {
+    // background: mix(green, orange, 20%);
+    // background: darken(yellow, 20%);
+    background: lighten(black, 50%);
+    color: yellow;
+}

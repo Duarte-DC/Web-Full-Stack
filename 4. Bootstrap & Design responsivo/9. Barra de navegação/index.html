@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Barra de navegação</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body>
+<!-- Barra de navegação simples com abas -->
+        <!-- 
+            Navegação
+            » Tipos de navegação:
+                - nav-pills
+                - nav-tabs
+            » Opções de alinhamento:
+                - justify-content-center
+                - justify-content-end
+                - flex-column
+         -->
+        <h2>Navegação simples com abas</h2>
+        <nav class = "sticky-top bg-light">
+            <ul class = "nav nav-tabs justify-content-center">
+                <li class = "nav-item"> <a class = "nav-link active" href = "">Home</a> </li>
+                <li class = "nav-item"> <a class = "nav-link" href = "">Sobre</a> </li>
+                <li class = "nav-item"> <a class = "nav-link disabled" href = "">Contatos</a> </li>
+            </ul>
+        </nav>
+
+
+<!-- Barra de navegação simples -->
+        <h2 class = "mt-5">Barra de navegação simples</h2>
+        <nav class = "navbar navbar-expand-md navbar-dark bg-dark">
+            <a href = "" class = "navbar-brand">Chalé Hotel</a>
+            
+            <ul class = "navbar-nav ms-auto">
+                <li class = "nav-item"> <a href = "" class = "nav-link">Home</a> </li>
+                <li class = "nav-item"> <a href = "" class = "nav-link">Sobre</a> </li>
+                <li class = "nav-item"> <a href = "" class = "nav-link">Serviços</a> </li>
+                <li class = "nav-item"> <a href = "" class = "nav-link">Contatos</a> </li>
+            </ul>
+        </nav>
+
+
+<!-- Barra de navegação com menu responsivo -->
+        <h2 class = "mt-5">Barra de navegação com menu responsivo</h2>
+        <nav class = "navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href = "" class = "navbar-brand ms-5">Chalé Hotel</a>
+
+            <!-- Menu Hamburger -->
+            <button class = "navbar-toggler me-5" data-bs-toggle = "collapse" data-bs-target = "#nav-target">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse" id = "nav-target">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Home</a> </li>
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Sobre</a> </li>
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Serviços</a> </li>
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Contatos</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+
+<!-- Barra de navegação com formulario -->
+        <h2 class = "mt-5">Barra de navegação com formulário</h2>
+        <nav class = "navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href = "" class = "navbar-brand ms-5">Chalé Hotel</a>
+
+            <button class = "navbar-toggler" data-bs-toggle = "collapse" data-bs-target = "#navegacao">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse" id = "navegacao">
+
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Home</a> </li>
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Sobre</a> </li>
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Serviços</a> </li>
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Contatos</a> </li>
+                </ul>
+
+                <form action = "" class = "row">
+                    <div class = "col">
+                        <input type = "search" class = "form-control" placeholder = "pesquisar...">
+                    </div>
+
+                    <div class = "col">
+                        <button class = "btn btn-outline-success">OK</button>
+                    </div>
+                </form>
+
+            </div>
+        </nav>
+
+
+<!-- Barra de navegação com menu dropdown -->
+        <h2 class = "mt-5">Barra de navegação com menu dropdown</h2>
+        <nav class = "navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="" class = "navbar-brand">Chalé Hotel</a>
+
+            <button class = "navbar-toggler" data-bs-toggle = "collapse" data-bs-target = "#navegacao1">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse" id = "navegacao1">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Home</a> </li>
+                    
+                    <li class = "nav-item dropdown"> 
+                        <a href = "" class = "nav-link dropdown-toggle" role = "button" data-bs-toggle = "dropdown">Serviços</a> 
+
+                        <ul class="dropdown-menu">
+                            <li> <a href = "#" class = "dropdown-item">Serviço1</a> </li>
+                            <li> <a href = "#" class = "dropdown-item">Serviço2</a> </li>
+                            <li> <a href = "#" class = "dropdown-item">Serviço3</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Contato</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+
+<!-- Cores -->
+        <!-- 
+            bg-primary, bg-secondary, bg-success, bg-info, 
+            bg-warning, bg-danger, bg-light, bg-dark 
+        -->
+        <h2 class = "mt-5">Cores</h2>
+        <nav class = "navbar navbar-expand-sm navbar-dark bg-info">
+            <a href="" class = "navbar-brand">Chalé Hotel</a>
+
+            <button class = "navbar-toggler" data-bs-toggle = "collapse" data-bs-target = "#navegacao1">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse" id = "navegacao1">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Home</a> </li>
+                    
+                    <li class = "nav-item dropdown"> 
+                        <a href = "" class = "nav-link dropdown-toggle" role = "button" data-bs-toggle = "dropdown">Serviços</a> 
+
+                        <ul class="dropdown-menu">
+                            <li> <a href = "#" class = "dropdown-item">Serviço1</a> </li>
+                            <li> <a href = "#" class = "dropdown-item">Serviço2</a> </li>
+                            <li> <a href = "#" class = "dropdown-item">Serviço3</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Contato</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+<!-- Alinhamentos -->
+        <!-- 
+            opções:
+            » fixed-top
+            » fixed-bottom
+            » sticky
+         -->
+        <h2 class = "mt-5">Alinhamentos</h2>
+        <nav class = "navbar navbar-expand-sm bg-success fixed-bottom">
+            <a href="" class = "navbar-brand">Chalé Hotel</a>
+
+            <button class = "navbar-toggler" data-bs-toggle = "collapse" data-bs-target = "#navegacao1">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse" id = "navegacao1">
+                <ul class = "navbar-nav ms-auto">
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Home</a> </li>
+                    
+                    <li class = "nav-item dropdown"> 
+                        <a href = "" class = "nav-link dropdown-toggle" role = "button" data-bs-toggle = "dropdown">Serviços</a> 
+
+                        <ul class="dropdown-menu">
+                            <li> <a href = "#" class = "dropdown-item">Serviço1</a> </li>
+                            <li> <a href = "#" class = "dropdown-item">Serviço2</a> </li>
+                            <li> <a href = "#" class = "dropdown-item">Serviço3</a> </li>
+                        </ul>
+                    </li>
+
+                    <li class = "nav-item"> <a href = "" class = "nav-link">Contato</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Bootstrap Javascript-->
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+            integrity = "sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" 
+            crossorigin = "anonymous">
+        </script>
+    </body>
+
+</html>

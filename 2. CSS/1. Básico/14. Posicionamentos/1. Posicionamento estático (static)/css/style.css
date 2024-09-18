@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body {
+    background: #007fc7;
+}
+    #container {
+        background: #fff;
+        width: 800px;
+
+        margin: 10px auto; /*para centralizar o container*/
+        padding: 10px;
+    }
+    .titulo {
+        position: static;
+    }
+    .texto {
+        position: static;
+    }

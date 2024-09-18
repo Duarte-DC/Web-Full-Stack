@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Carousel</title>
+        
+        <script src = "scripts/flexibility.js"></script>
+        <script src = "https://kit.fontawesome.com/e33cdef215.js" crossorigin = "anonymous"></script>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-sm-8 m-auto">
+
+                    <br>
+
+                    <!-- Carousel Simples -->
+                    <h2>Carousel simples</h2>
+                    <div class = "carousel slide" data-ride = "carousel">
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "assets/images/imagem1.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem2.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem3.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem4.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem5.jpeg" class = "img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <!-- Carousel com controles -->
+                    <h2>Carousel com controles</h2>
+                    <div id = "navegacaoControles" class = "carousel slide" data-ride = "carousel">
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "assets/images/imagem1.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem2.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem3.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem4.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem5.jpeg" class = "img-fluid">
+                            </div>
+                        </div>
+
+                        <button class = "carousel-control-prev" data-bs-target = "#navegacaoControles" data-bs-slide = "prev">
+                            <span class = "carousel-control-prev-icon"></span>
+                            <span class = "visually-hidden">Voltar</span>
+                        </button>
+                        <button class = "carousel-control-next" data-bs-target = "#navegacaoControles" data-bs-slide = "next">
+                            <span class = "carousel-control-next-icon"></span>
+                            <span class = "visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+
+                    <br><br>
+
+                    <!-- Carousel com controles e indicadores -->
+                    <h2>Carousel com controles e indicadores</h2>
+                    <div id = "navControlesIndicadores" class = "carousel slide" data-ride = "carousel">
+                        <div class="carousel-indicators">
+                            <button data-bs-target = "#navControlesIndicadores" data-bs-slide-to = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
+                            <button data-bs-target = "#navControlesIndicadores" data-bs-slide-to = "1" aria-label = "Slide 2"></button>
+                            <button data-bs-target = "#navControlesIndicadores" data-bs-slide-to = "2" aria-label = "Slide 3"></button>
+                            <button data-bs-target = "#navControlesIndicadores" data-bs-slide-to = "3" aria-label = "Slide 4"></button>
+                            <button data-bs-target = "#navControlesIndicadores" data-bs-slide-to = "4" aria-label = "Slide 5"></button>
+                        </div>
+
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "assets/images/imagem1.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem2.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem3.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem4.jpeg" class = "img-fluid">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem5.jpeg" class = "img-fluid">
+                            </div>
+                        </div>
+
+                        <button class = "carousel-control-prev" data-bs-target = "#navControlesIndicadores" data-bs-slide = "prev">
+                            <span class = "carousel-control-prev-icon"></span>
+                            <span class = "visually-hidden">Voltar</span>
+                        </button>
+                        <button class = "carousel-control-next" data-bs-target = "#navControlesIndicadores" data-bs-slide = "next">
+                            <span class = "carousel-control-next-icon"></span>
+                            <span class = "visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+
+                    <br><br>
+
+                    <!-- Carousel com legendas -->
+                    <h2>Carousel com legendas</h2>
+                    <div id = "navLegendas" class = "carousel slide" data-ride = "carousel">
+                        <div class="carousel-indicators">
+                            <button data-bs-target = "#navLegendas" data-bs-slide-to = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
+                            <button data-bs-target = "#navLegendas" data-bs-slide-to = "1" aria-label = "Slide 2"></button>
+                            <button data-bs-target = "#navLegendas" data-bs-slide-to = "2" aria-label = "Slide 3"></button>
+                            <button data-bs-target = "#navLegendas" data-bs-slide-to = "3" aria-label = "Slide 4"></button>
+                            <button data-bs-target = "#navLegendas" data-bs-slide-to = "4" aria-label = "Slide 5"></button>
+                        </div>
+
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "assets/images/imagem1.jpeg" class = "img-fluid">
+                                <div class = "carousel-caption d-none d-md-block">
+                                    <h5>Slide 1</h5>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem2.jpeg" class = "img-fluid">
+                                <div class = "carousel-caption d-none d-md-block">
+                                    <h5>Slide 2</h5>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem3.jpeg" class = "img-fluid">
+                                <div class = "carousel-caption d-none d-md-block">
+                                    <h5>Slide 3</h5>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem4.jpeg" class = "img-fluid">
+                                <div class = "carousel-caption d-none d-md-block">
+                                    <h5>Slide 4</h5>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "assets/images/imagem5.jpeg" class = "img-fluid">
+                                <div class = "carousel-caption d-none d-md-block">
+                                    <h5>Slide 5</h5>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class = "carousel-control-prev" data-bs-target = "#navLegendas" data-bs-slide = "prev">
+                            <span class = "carousel-control-prev-icon"></span>
+                            <span class = "visually-hidden">Voltar</span>
+                        </button>
+                        <button class = "carousel-control-next" data-bs-target = "#navLegendas" data-bs-slide = "next">
+                            <span class = "carousel-control-next-icon"></span>
+                            <span class = "visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

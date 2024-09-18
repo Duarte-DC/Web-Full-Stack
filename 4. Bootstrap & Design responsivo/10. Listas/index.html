@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Listas</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body>
+        <!-- Listas -->
+        <h2>Lista simples</h2>
+        <ul class = "list-group">
+            <li class = "list-group-item">Meu item de lista 1</li>
+            <li class = "list-group-item">Meu item de lista 2</li>
+            <li class = "list-group-item">Meu item de lista 3</li>
+            <li class = "list-group-item">Meu item de lista 4</li>
+        </ul>
+
+        <br><br>
+
+        <!-- Listas com classe flush -->
+        <h2>Lista com flush</h2>
+        <ul class = "list-group list-group-flush">
+            <li class = "list-group-item">Meu item de lista 1</li>
+            <li class = "list-group-item">Meu item de lista 2</li>
+            <li class = "list-group-item">Meu item de lista 3</li>
+            <li class = "list-group-item">Meu item de lista 4</li>
+        </ul>
+
+        <br><br>
+
+        <!-- Listas com itens ativos -->
+        <h2>Lista com itens ativos</h2>
+        <ul class = "list-group">
+            <li class = "list-group-item active">Meu item de lista 1 - item ativo</li>
+            <li class = "list-group-item">Meu item de lista 2</li>
+            <li class = "list-group-item">Meu item de lista 3</li>
+            <li class = "list-group-item">Meu item de lista 4</li>
+        </ul>
+
+        <br><br>
+
+        <!-- Lista com itens inativos -->
+        <h2>Lista com itens inativos</h2>
+        <ul class = "list-group">
+            <li class = "list-group-item">Meu item de lista 1</li>
+            <li class = "list-group-item">Meu item de lista 2</li>
+            <li class = "list-group-item">Meu item de lista 3</li>
+            <li class = "list-group-item disabled">Meu item de lista 4 - item inativo</li>
+        </ul>
+
+        <br><br>
+
+        <!-- Lista com Links -->
+        <h2>Lista com links</h2>
+        <section class = "list-group">
+            <a href = "" class = "list-group-item list-group-item-action">Meu item de lista 1</a>
+            <a href = "" class = "list-group-item list-group-item-action">Meu item de lista 2</a>
+            <a href = "" class = "list-group-item list-group-item-action">Meu item de lista 3</a>
+            <a href = "" class = "list-group-item list-group-item-action">Meu item de lista 4</a>
+        </section>
+
+        <br><br>
+
+        <!-- Listas com classes enumerada -->
+        <h2>Lista enumerada</h2>
+        <ul class = "list-group list-group-numbered">
+            <li class = "list-group-item">Meu item de lista</li>
+            <li class = "list-group-item">Meu item de lista</li>
+            <li class = "list-group-item">Meu item de lista</li>
+            <li class = "list-group-item">Meu item de lista</li>
+        </ul>
+
+        <br><br>
+
+        <!-- 
+            lista com badge
+            » class: badge-<opção>
+            » opções: primary, secondary, success, info, warning, danger, light, dark
+        -->
+        <h2>Lista com badge</h2>
+        <ul class = "list-group">
+            <li class = "list-group-item">Caixa de entrada
+                <span class = "badge text-bg-primary">+99</span>
+            </li>
+            <li class = "list-group-item">Caixa de entrada
+                <span class = "badge text-bg-primary">9</span>
+            </li>
+            <li class = "list-group-item">Caixa de entrada
+                <span class = "badge text-bg-primary">29</span>
+            </li>
+            <li class = "list-group-item">Caixa de entrada
+                <span class = "badge text-bg-primary">+99</span>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <!-- Lista enumerada com badge -->
+        <h2>Lista enumerada com Badge</h2>
+        <ul class = "list-group list-group-numbered">
+            <li class = "list-group-item d-flex justify-content-between align-itens-start">
+                <div class = "ms-2 me-auto">
+                    <div class = "fw-bold">
+                        Meu item de lista
+                    </div>
+                    Conteúdo para item de lista
+                </div>
+                <span class = "badge text-bg-primary rounded-pill">12</span>
+            </li>
+            <li class = "list-group-item d-flex justify-content-between align-itens-start">
+                <div class = "ms-2 me-auto">
+                    <div class = "fw-bold">
+                        Meu item de lista
+                    </div>
+                    Conteúdo para item de lista
+                </div>
+                <span class = "badge text-bg-primary rounded-pill">+99</span>
+            </li>
+            <li class = "list-group-item d-flex justify-content-between align-itens-start">
+                <div class = "ms-2 me-auto">
+                    <div class = "fw-bold">
+                        Meu item de lista
+                    </div>
+                    Conteúdo para item de lista
+                </div>
+                <span class = "badge text-bg-primary rounded-pill">49</span>
+            </li>
+            <li class = "list-group-item d-flex justify-content-between align-itens-start">
+                <div class = "ms-2 me-auto">
+                    <div class = "fw-bold">
+                        Meu item de lista
+                    </div>
+                    Conteúdo para item de lista
+                </div>
+                <span class = "badge text-bg-primary rounded-pill">1</span>
+            </li>
+        </ul>
+
+        <br><br>
+
+        <!-- 
+            Lista com classes contextuais
+            » class: list-group-item-<opção>
+            » opções: primary, secondary, success, info, warning, danger, light, dark
+        -->
+        <h2>Lista com classes contextuais</h2>
+        <ul class = "list-group">
+            <li class = "list-group-item">Normal</li>
+            <li class = "list-group-item list-group-item-primary">Primary</li>
+            <li class = "list-group-item list-group-item-secondary">Secondary</li>
+            <li class = "list-group-item list-group-item-success">Success</li>
+            <li class = "list-group-item list-group-item-info">Info</li>
+            <li class = "list-group-item list-group-item-warning">Warning</li>
+            <li class = "list-group-item list-group-item-danger">Danger</li>
+            <li class = "list-group-item list-group-item-light">Light</li>
+            <li class = "list-group-item list-group-item-dark">Dark</li>
+        </ul>
+
+        <br><br>
+
+        <!-- Listas com classes contextuais para links e botões -->
+        <h2>Lista com classes contextuais para links e botões</h2>
+        <section class = "list-group">
+            <a href = "" class = "list-group-item">Normal</a>
+            <a href = "" class = "list-group-item list-group-item-primary">Primary</a>
+            <a href = "" class = "list-group-item list-group-item-secondary">Secondary</a>
+            <a href = "" class = "list-group-item list-group-item-success">Success</a>
+            <a href = "" class = "list-group-item list-group-item-info">Info</a>
+            <a href = "" class = "list-group-item list-group-item-warning">Warning</a>
+            <a href = "" class = "list-group-item list-group-item-danger">Danger</a>
+            <a href = "" class = "list-group-item list-group-item-light">Light</a>
+            <a href = "" class = "list-group-item list-group-item-dark">Dark</a>
+        </section>
+
+        <br><br>
+
+
+        <!-- 
+            Lista Horizontal 
+            » class: list-group-horizontal-<opção>
+            » opções: sm, md, lg, xl, xxl
+        -->
+        <h2>Lista Horizontal</h2>
+        <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">Item</li>
+            <li class="list-group-item">Descrição</li>
+            <li class="list-group-item">Preço</li>
+        </ul>
+        <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">Item</li>
+            <li class="list-group-item">Descrição</li>
+            <li class="list-group-item">Preço</li>
+        </ul>
+        <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">Item</li>
+            <li class="list-group-item">Descrição</li>
+            <li class="list-group-item">Preço</li>
+        </ul>
+        <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item">Item</li>
+            <li class="list-group-item">Descrição</li>
+            <li class="list-group-item">Preço</li>
+        </ul>
+
+        <br><br>
+
+        <!-- Listas com breadcrumb -->
+        <h2>Listas com breadcrumb</h2>
+        <ol class = "breadcrumb">
+            <li class = "breadcrumb-item">Home</li>
+        </ol>
+        <ol class = "breadcrumb">
+            <li class = "breadcrumb-item"><a href = "">Home</a> </li>
+            <li class = "breadcrumb-item active">Notícias</li>
+        </ol>
+        <ol class = "breadcrumb">
+            <li class = "breadcrumb-item"><a href = "">Home</a> </li>
+            <li class = "breadcrumb-item"><a href = "">Usuários</a> </li>
+            <li class = "breadcrumb-item active">Duarte Charles</li>
+        </ol>
+        <!--Bootstrap Javascript-->
+        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

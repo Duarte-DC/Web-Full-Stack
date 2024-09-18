@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!-- Bootstrap CSS --> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!-- Favicon --> <link rel = "shortcut icon" href = "" type = "image/x-icon">
+        <!-- Normalize CSS --> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        <!-- Style CSS --> <link rel = "stylesheet" href = "assets/styles/main.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Flexibility --> <script src = "scripts/flexibility.js"></script>
+        <!-- Icons --> <script src = "https://kit.fontawesome.com/e33cdef215.js" crossorigin = "anonymous"></script>
+        
+        <title></title>
+    </head>
+    
+    <body>
+        <!--                   ------                   < Javascript >                   ------                   -->
+        <script>
+             /*
+            var idade = prompt ('Digite a sua idade :') retorna String
+            
+                number + number = soma
+                string + string = concatenacao
+                number + string = concatenacao
+
+            Converter String para Number 
+                Number.parseInt (idade) - para numeros inteiros
+                Number.parseFloat (idade) - para numeros reais
+            
+            no caso de precisar receber os dois tipos numero
+                Number (idade)
+
+            Converter de Number para String
+                String (idade)
+                ou 
+                document.write (idade.toString())
+
+            exemplo
+                var idade = Number.parseInt (prompt ('Digite a sua idade:'))
+                                                ou
+                var idade = Number (prompt ('Digite a sua idade:'))
+            */
+
+            var num1 = Number (prompt ('Insira o primeiro numero: '))
+            var num2 = Number (prompt ('Insira o segundo numero'))
+            var num3 = num1 + num2
+
+            alert ('O resultado da soma dos dois numeros inseridos e: ' + num3)
+
+            /*
+            var num1 = 1545.5
+
+            Formatando numeros decimais    
+                num1.toFixed (2)
+                    resultado: 1545.50
+                num1.toFixed (2).replace ('.',',')
+                    resultado: 1545,50
+
+            Formatando moeda
+                num1.toLocaleString ('pt-pt', {style: 'currency', currency: 'MZN'})
+                    reultado: 1545.50 MZN
+            */
+
+            nome = 'Duarte'
+            idade = 23
+            peso = 60.2
+    
+            /*Formatacao de String
+
+            "" concatenacao
+            '' concatenacao
+            `` para template
+
+                nome.length - Diz quantos caracteres a String tem
+                nome.toUpperCase () - converte String para "LETRAS MAIUSCULAS"
+                nome.toLowerCase () - converte String para "letras minusculas"
+                nome.charAt (0) - retorna o primeiro caracter
+                
+            alert ('Eu sou ' + nome + ' de ' + idade + ' anos de idade, atualmente pesando ' + peso + 'kg') -- faz concatenacao
+            */
+            alert (`Eu sou o ${nome.toUpperCase ()} de ${idade} anos de idade, atualmente pesando ${peso}kg`) //usa template string
+
+            document.write (`O seu nome tem ${nome.length} letras<br/>`)
+            document.write (`O seu nome em maiusculas: <strong>${nome.toUpperCase ()}</strong><br/>`)
+            document.write (`O seu nome em minusculas: <strong>${nome.toLowerCase ()}</strong>`)
+        </script>
+
+        <!-- Bootstrap Javascript -->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin = "anonymous">
+        </script>
+        
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,202 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Cartões e Listas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+  [fullscreen]="true"
+  class = "ion-padding"
+>
+  <h3>Cartões</h3>
+
+  <h5>» Modo IOS</h5>
+  
+  <ion-card 
+    color = "dark"
+    mode = "ios"
+  >
+    <img 
+      alt = "Silhouette of mountains" 
+      src = "https://ionicframework.com/docs/img/demos/card-media.png"
+    >
+    <ion-card-header>
+      <ion-card-title>Titulo do cartão</ion-card-title>
+      <ion-card-subtitle>Subtitulo do cartão</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Placeat, sapiente vitae modi doloremque magni dolorum nobis quis odio eum culpa, 
+      dolorem, animi incidunt fuga nulla! Praesentium amet temporibus alias laudantium!
+    </ion-card-content>
+  </ion-card>
+
+  <h5>» Modo Andoird</h5>
+
+  <ion-card 
+    color = "primary"
+    mode = "md"
+  >
+
+    <ion-card-header>
+
+      <ion-card-title>Titulo do cartão</ion-card-title>
+      <ion-card-subtitle>Subtitulo do cartão</ion-card-subtitle>
+
+    </ion-card-header>
+  
+    <img 
+      alt = "Silhouette of mountains" 
+      src = "https://ionicframework.com/docs/img/demos/card-media.png"
+    >
+    <ion-card-content>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Placeat, sapiente vitae modi doloremque magni dolorum nobis quis odio eum culpa, 
+      dolorem, animi incidunt fuga nulla! Praesentium amet temporibus alias laudantium!
+    </ion-card-content>
+
+  </ion-card>
+
+  <br> <br>
+
+  <h3>Cartões com listagem de itens</h3>
+
+  <ion-card>
+
+    <ion-card-header>
+
+      <ion-card-title>Titulo do cartão</ion-card-title>
+      <ion-card-subtitle>Subtitulo do cartão</ion-card-subtitle>
+
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-list>
+  
+        <ion-item>
+          <ion-thumbnail slot = "start">
+            <img
+              alt = "Silhouette of mountains" 
+              src = "https://ionicframework.com/docs/img/demos/card-media.png"
+            >
+          </ion-thumbnail>
+
+          <ion-label>
+            1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Officiis vero provident impedit! 
+          </ion-label>
+        </ion-item>
+  
+        <ion-item href = "https://www.google.com">
+          <ion-thumbnail slot = "start">
+            <img
+              alt = "Silhouette of mountains" 
+              src = "https://ionicframework.com/docs/img/demos/card-media.png"
+            >
+          </ion-thumbnail>
+
+          <ion-label>
+            2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Officiis vero provident impedit! 
+          </ion-label>
+        </ion-item>
+
+      </ion-list>
+
+    </ion-card-content>
+
+  </ion-card>
+
+  <br><br>
+
+  <h3>Listas</h3>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label>
+        1.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Labore quibusdam voluptas quaerat nostrum adipisci a, 
+        voluptates ipsa vel voluptatem impedit nisi amet ducimus minima dolore quos ad saepe earum modi.
+      </ion-label>
+    </ion-item>
+
+    <ion-item href = "https://www.google.com">
+      <ion-label>
+        2.  Delectus nisi totam officia veniam architecto. 
+        Omnis veniam beatae odit placeat accusamus neque quis tempora dolorum? 
+        Esse eaque tenetur rerum officia, fugit expedita minus perspiciatis alias, eos atque quasi tempora.
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail slot = "start">
+        <img
+          alt = "Silhouette of mountains" 
+          src = "https://ionicframework.com/docs/img/demos/card-media.png"
+        >
+      </ion-thumbnail>
+
+      <ion-label>
+        3.  Rerum ut nesciunt quis est necessitatibus magni illo consequuntur minima? 
+        Commodi aut, sed quis hic voluptatibus saepe dolore earum eius cumque ducimus cum aliquam suscipit porro, 
+        rem dignissimos quae quibusdam?
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <br>
+
+  <h3>Listas com avatares</h3>
+
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot = "start">
+        <img 
+          alt = "Silhouette of a person's head" 
+          src = "https://ionicframework.com/docs/img/demos/avatar.svg"
+        >
+      </ion-avatar>
+      <ion-label>Duarte Charles</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-avatar slot = "start">
+        <img 
+          alt = "Silhouette of a person's head" 
+          src = "https://ionicframework.com/docs/img/demos/avatar.svg"
+        >
+      </ion-avatar>
+      <ion-label>Duarte DC</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <br>
+
+  <h3>Listas slide</h3>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar slot = "start">
+          <img 
+            alt = "Silhouette of a person's head" 
+            src = "https://ionicframework.com/docs/img/demos/avatar.svg"
+          >
+        </ion-avatar>
+        <ion-label>Duarte Charles</ion-label>
+      </ion-item>
+
+      <ion-item-options >
+        <ion-item-option>Favorite</ion-item-option>
+        <ion-item-option color="danger">Delete</ion-item-option>
+      </ion-item-options>
+      
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

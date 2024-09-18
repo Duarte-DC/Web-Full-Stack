@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*  
+    For  
+    »   through
+        ex: @for $i form 1 through 4    »   vai de 1 até ao 4
+
+    »   to
+        ex: @for $i from 1 to 4    »    vai de 1 até ao 3 sem contar o 4
+*/
+/*While*/
+/* Each */
+/*  Funções  */
+.col-1 {
+  width: 8.3333333333%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-3 {
+  width: 25%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-6 {
+  width: 50%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-9 {
+  width: 75%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-12 {
+  width: 100%;
+  background-color: green;
+}
+
+.margin {
+  border-radius: 15px;
+  margin: auto;
+  padding: 10px;
+}
+.margin p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Outras funções  */
+.alerta {
+  background: gray;
+  color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

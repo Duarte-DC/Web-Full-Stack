@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+p {
+    text-align: justify;
+}
+    #pagina {
+        background: #fff url(../imagens/coluna.png) repeat-y left top;
+
+        margin: 0 auto;
+
+        width: 960px;
+
+        max-width: 960px;
+    }
+        #cabecalho {
+            background: url(../imagens/cabecalho.jpg) no-repeat center center;
+            
+            height: 200px;
+
+            text-align: center;
+            line-height: 200px;
+        }
+        #principal {
+            width: 74%;
+
+            float: right;
+        }
+            .conteudo {
+                width: 63%;
+
+                float: left;
+            }
+                .conteudo img {
+                    width: 100%;
+                }
+            .janela {
+                background: #d1d1d1;
+
+                width: 34%;
+
+                float: right;
+            }
+                .janela h3,
+                .janela p {
+                    padding: 0 20px;
+                }
+        #navegacao {
+            margin-left:15px;
+
+            padding: 20px 0;
+
+            width: 24%;
+
+            float: left;
+        }
+            #navegacao ul {
+                list-style: none;
+            }
+                #navegacao a {
+                    text-decoration: none;
+
+                    height: 30px;
+                    line-height: 30px;
+                }
+        #rodape {
+            background: #9e9e9e;
+
+            text-align: center;
+
+            padding: 5px;
+
+            clear: both;
+        }

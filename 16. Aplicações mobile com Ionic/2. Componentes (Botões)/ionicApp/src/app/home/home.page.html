@@ -1,0 +1,90 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Botões
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+  [fullscreen]="true" 
+  class = "ion-padding"
+>
+  <h4>Botões</h4>
+  <ion-button>Padrão</ion-button>
+  <ion-button href = "http://www.google.com">Link</ion-button>
+
+  <br> <br>
+
+  <!-- Cores -->
+  <h4>Cores</h4>
+  <ion-button color = "primary">Primary</ion-button>
+  <ion-button color = "secondary">Secondary</ion-button>
+  <ion-button color = "tertiary">Tertiary</ion-button>
+
+  <ion-button color = "success">Success</ion-button>
+  <ion-button color = "warning">Warning</ion-button>
+  <ion-button color = "danger">Danger</ion-button>
+  <ion-button color = "light">Light</ion-button>
+  <ion-button color = "medium">Medium</ion-button>
+  <ion-button color = "dark">Dark</ion-button>
+
+  <br> <br>
+
+  <!-- Botões expandidos -->
+  <h4>Botões expandidos</h4>
+  <ion-button expand = "full" color = "success">Totalmente expandido</ion-button>
+  <ion-button expand = "block">Totalmente expandido com bordas arredondadas</ion-button>
+
+  <br> <br>
+
+  <!-- Botões arredondados -->
+  <h4>Botões arredondados</h4>
+  <ion-button shape = "round">Arredondados</ion-button>
+
+  <br> <br>
+
+  <!-- Preenchimento -->
+  <h4>Preenchimento de botões</h4>
+  <ion-button fill = "outline">Preenchimento</ion-button>
+
+  <!-- Ícones -->
+  <h4>Ícones</h4>
+  <ion-button>
+    <ion-icon 
+      slot = "start" 
+      name = "star"
+    >
+    </ion-icon> 
+    Ícones
+  </ion-button>
+
+  <br>
+
+  <ion-button>
+    <ion-icon 
+      slot = "end"
+      name = "musical-note"
+    >
+    </ion-icon>
+    Ícones
+  </ion-button>
+
+  <br>
+
+  <ion-button>
+    <ion-icon 
+      slot = "icon-only"
+      name = "battery-full-outline"
+    >
+    </ion-icon>
+  </ion-button>
+
+  <br><br>
+
+  <h4>Tamanhos</h4>
+  <ion-button size = "small">Pequeno</ion-button>
+  <ion-button>Medio</ion-button>
+  <ion-button size = "large">Grande</ion-button>
+
+</ion-content>

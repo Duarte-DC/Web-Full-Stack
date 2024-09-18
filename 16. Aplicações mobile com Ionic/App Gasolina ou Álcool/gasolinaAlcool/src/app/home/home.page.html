@@ -1,0 +1,85 @@
+<ion-content 
+  [fullscreen] = "true"
+  class = "ion-padding"
+>
+  <ion-grid>
+    <ion-row>
+      <ion-col 
+        class = "ion-text-center"
+        size = "12"
+      >
+        <img 
+          [src] = "imagemLocal"
+        >
+      </ion-col>
+    </ion-row>
+
+    <br>
+
+    <ion-row>
+      <ion-col 
+        size = "12"
+        class = "ion-text-center"
+      >
+        <h4>Saiba qual a melhor opção para abastecimento do seu carro.</h4>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col
+      size = "12"
+      >
+
+        <ion-item>
+          <ion-input
+            label = "Preço do Álcool:"
+            labelPlacement = "floating"
+            placeholder = "ex: 1,90"
+            type = "number"
+            [(ngModel)] = "precoAlcool"
+          >
+
+          </ion-input>
+        </ion-item>
+
+        <br>
+
+        <ion-item>
+          <ion-input
+            label = "Preço da Gaolina"
+            labelPlacement = "floating"
+            placeholder = "ex: 2,90"
+
+            type = "number"
+
+            [(ngModel)] = "precoGasolina"
+          >
+
+          </ion-input>
+        </ion-item>
+
+        <br>
+
+        <ion-button
+          expand = full
+          (click) = "calcular ()"
+        >
+          Calcular
+        </ion-button>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h5 
+          *ngIf = "resultado"
+          class = "ion-text-center"
+        >
+          Resultado: {{resultado}}
+        </h5>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

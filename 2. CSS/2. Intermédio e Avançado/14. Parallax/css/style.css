@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/* Configuração padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    color: #777;
+
+    font: 16px "Lato", sans-serif;
+
+    height: 100%; /* para a imagem ocupar a tela a 100% */
+
+    margin: 0;
+    padding: 0;
+}
+.conteudo {
+    color: #777;
+    background-color: white;
+    
+    text-align: center;
+
+    padding: 50px 250px;
+}
+    h3 {
+        color: #111;
+        text-transform: uppercase;
+
+        margin-bottom: 25px;
+    }
+    p {
+        margin-bottom: 20px;
+
+    }
+
+
+/* Efeito Parallax */
+
+.caixa1 {
+    background: url(../imagens/imagem1.jpg);
+}
+.caixa2 {
+    background: url(../imagens/imagem3.jpg);
+}
+.caixa3 {
+    background: url(../imagens/imagem4.jpg);
+}
+.caixa4 {
+    background: url(../imagens/imagem6.jpg);
+}
+    .caixaTitulo {
+        text-align: center;
+        text-transform: uppercase;
+
+        width: 100%;
+
+        position: absolute;
+        left: 0;
+        top: 45%;
+
+        opacity: 0.7;
+    }
+        .caixaTitulo span {
+            background-color: #111;
+
+            letter-spacing: 5px;
+            font-size: 25px;
+            
+            padding: 18px;
+        }
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 100%;
+    
+    opacity: 0.7;
+    
+    position: relative;
+}

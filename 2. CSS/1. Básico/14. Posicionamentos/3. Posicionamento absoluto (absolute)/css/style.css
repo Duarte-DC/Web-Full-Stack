@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body {
+    background: #007fc7;
+}
+    #container {
+        background: #fff;
+        width: 800px;
+
+        margin: 10px auto; /*para centralizar o container*/
+        padding: 10px;
+
+        position: relative;
+    }
+    p {
+        width: 300px;
+        text-align: justify;
+    }
+    .absolute {
+        position: absolute;
+        /*
+            top, right, bottom e left
+
+            a posição absoluta é calculada em relação ao container que o elemento se encontra
+            mas só quando o container tem uma posição, caso contrário será alinhado consoane 
+            o corpo da página
+
+            ou seja, para alinhar a posição absoluta ao container, o mesmo precisa estar numa
+            posição diferente de estática, que é a posição padrão do HTML
+        */
+        right: 10px;
+        top: 75px;
+    }

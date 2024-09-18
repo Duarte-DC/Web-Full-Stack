@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Tamanhos e Bordas</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+    
+    
+    <body style = "margin-bottom: 200px; width: 600px; margin: 0 auto;">
+        
+        <!-- Classes de largura -->
+        <div class="bg-primary w-25">width 25%</div>
+        <div class="bg-primary w-50">width 50%</div>
+        <div class="bg-primary w-75">width 75%</div>
+        <div class="bg-primary w-100">width 100%</div>
+        <div class="bg-primary w-auto">width auto</div>
+        
+        <br><br>
+        
+        <!-- Classes de altura -->
+        
+        <div style = "height: 300px; border: 1px solid #777;">
+            <div class = "bg-warning d-inline-block h-25">height 25%</div>
+            <div class = "bg-warning d-inline-block h-50">height 50%</div>
+            <div class = "bg-warning d-inline-block h-75">height 75%</div>
+            <div class = "bg-warning d-inline-block h-100">height 100%</div>
+            <div class = "bg-warning d-inline-block h-auto">height auto</div>
+        </div>
+
+        <br><br>
+        
+        <!--
+            Bordas
+                border » todas as bordas
+                border-top » borda superior
+                border-bottom » borda inferior
+                border-start » borda esquerda
+                border-end » borda direita
+            
+            Cores de bordas
+            border-<cor>
+                primary, secondary, success, info, 
+                warning, danger, light, dark, white
+        -->
+        <div class = "bg-white mb-2 border border-primary">Todas as bordas</div>
+        <div class = "bg-white mb-2 border-top border-secondary">Borda superior</div>
+        <div class = "bg-white mb-2 border-bottom border-success">Borda inferior</div>
+        <div class = "bg-white mb-2 border-start border-info ">Borda esquerda</div>
+        <div class = "bg-white mb-2 border-end border-warning">Borda direita</div>
+
+        <br><br>
+
+        <!-- 
+            Border Radius 
+                rounded - todas as bordas
+                rounded-top - borda superior
+                rounded-bottom - borda inferior
+                rounded-start - borda esquerda
+                rounded-end - borda direita
+                rounded-circle - circulo
+        -->
+        <div class="bg-light mb-2 border border-primary p-5 rounded">Todas as bordas</div>
+        <div class="bg-light mb-2 border border-primary p-5 rounded-top">Superior</div>
+        <div class="bg-light mb-2 border border-primary p-5 rounded-bottom">Inferior</div>
+        <div class="bg-light mb-2 border border-primary p-5 rounded-start">Esquerda</div>
+        <div class="bg-light mb-2 border border-primary p-5 rounded-end">Direita</div>
+        <div class="bg-light mb-2 border border-primary p-5 w-25 rounded-circle">circulo</div>
+                
+        <br><br>
+
+        <!--
+
+        -->
+            
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

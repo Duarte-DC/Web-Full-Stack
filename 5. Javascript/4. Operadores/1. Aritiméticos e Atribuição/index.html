@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!-- Bootstrap CSS --> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!-- Favicon --> <link rel = "shortcut icon" href = "" type = "image/x-icon">
+        <!-- Normalize CSS --> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        <!-- Style CSS --> <link rel = "stylesheet" href = "assets/styles/main.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Flexibility --> <script src = "scripts/flexibility.js"></script>
+        <!-- Icons --> <script src = "https://kit.fontawesome.com/e33cdef215.js" crossorigin = "anonymous"></script>
+        
+        <title>Operadores aritiméticos e atribuição</title>
+    </head>
+    
+    <body>
+        <!--                   ------                   < Javascript >                   ------                   -->
+        <script>
+            /*
+            Operadores Aritiméticos
+                + Adição
+                    exemplo: 5 + 2 = 7
+    
+                - Subtração
+                    exemplo: 5 - 2 = 3
+
+                * Multiplicação
+                    exemplo: 5 * 2 = 10
+
+                / Divisão real
+                    exemplo: 5 / 2 = 2.5
+
+                % Resto de divisão
+                    exemplo: 5 % 2 = 1
+    
+                ** Potenci (ao quadrado)
+                    exemplo: 5 ** 2 = 25
+
+                Ordem de precedência
+                    1º ()
+                    2º **
+                    3º *, /, %
+                    4º +. -
+
+            Operadores de Atribuição
+                Atribuição simples
+                    var numero = 3 % 2 + 4 + 2
+
+                Atributos de Incremento
+                    numero = numero + 1
+                        ou
+                    numero += 1
+                        ou
+                    numero ++
+                
+                Atributos de Decremento
+                    numero = numero - 1
+                        ou
+                    numero -= 1
+                        ou
+                    numero --
+                    
+                Auto-atribuição
+                    var numero = 3
+                        
+                        numero = numero + 4
+                                ou
+                        numero += 4
+                            resultado: 3 + 4 = 7
+
+                        numero = numero - 5
+                                ou
+                        numero -= 5
+                            resultado: 7 - 5 = 2
+                        
+                        numero = numero * 4
+                                ou
+                        numero *= 4
+                            resultado: 2 * 4 = 8
+                        
+                        numero = numero / 2
+                                ou
+                        numero /= 2
+                            resultado: 8 / 2 = 4
+                        
+                        numero = numero ** 2
+                                ou
+                        numero **= 2
+                            resultado: 4 ** 2 = 16
+
+                        numero = numero % 5
+                                ou
+                        numero %= 5
+                            resultado: 16 % 5 = 1
+            */
+            var num1 = 5 + 3 //8
+            var num2 = num1 % 5 //3
+            var num3 = 5 * num2 ** 2 //45
+            var num4 = 10 - num1 / 2 //6
+            var num5 = 6 * 2 / num4 //2
+            var num6 = num2 % num5 + 4 / num5 //3
+
+            var num7 = 8
+                num7 += 2
+                num7 %= 2 
+
+            document.write (`Primeiro resultado: ${num1}<br/>Segundo Resultado: ${num2}<br/>Terceiro Resultado: ${num3}<br/>
+                            Quarto Resultado: ${num4}<br/>Quinto Resultado: ${num5}<br/>Sexto Resultado: ${num6}<br/>Setemo Resultado: ${num7}`)
+        </script>
+
+        <!-- Bootstrap Javascript -->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+        crossorigin = "anonymous">
+        </script>
+        
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

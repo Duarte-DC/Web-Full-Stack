@@ -1,0 +1,5 @@
+USE lojaVirtual;
+
+ALTER TABLE
+    pedidos CHANGE dataHora dataHora DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP;
+

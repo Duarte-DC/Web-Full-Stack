@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*  Aninhamento  */
+/*  Referenciar selector pai  */
+/*  Variaveis  */
+#conteudo {
+  background-color: #ccc;
+  padding: 15px;
+}
+#conteudo h1, #conteudo h2 {
+  color: hsl(0, 0%, 47%);
+}
+#conteudo a {
+  color: red;
+}
+
+/*  Escopo de variaveis (Onde a variavel é reconhecida)  */
+#rodape {
+  background-color: green;
+}
+
+h2 {
+  color: green;
+}
+
+/*  Interpolação  */
+.red {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

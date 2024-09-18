@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.marcador {
+    border: 1px solid #f94646;
+    background: #fe9d9d;
+
+    height: 120px;
+}
+.marcador-container {
+    border: 1px solid #36ae26;
+    background: #5bf946;
+}
+.borda {
+    border: 1px solid;
+}

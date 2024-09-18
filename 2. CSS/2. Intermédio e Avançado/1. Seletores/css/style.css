@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/* Seletor universal - aplica-se em todos os elementos do documento */
+* { 
+    /* Seleciona todos os elementos da página */
+    border: 1px solid #ccc;
+}
+
+
+/* Selectores de texto - seleciona elementos pelo tipo */
+h1 {
+    /* Seleciona os elementos <h1> */
+    color: green;
+}
+
+
+/* Seletor de classe - seleciona um elemento cujo atributo class tem o valor especificado depois do ponto */
+.texto {
+    /* Seleciona qualquer elemento cuko atributo class tem o valor "texto" */
+    font-size: 1.2em;
+}
+p.texto {
+    /* Seleciona somete o elemento <p> cujo atributo class tem o valor "texto" */
+    color: rgb(56, 56, 56);
+}
+
+
+
+/* Seletor de ID - seleciona um elemento cujo atributo id tem o valor especificado apos o simbolo #*/
+#principal {
+    /* Seleciona o elemento cujo atributo id tem o valor "principal" */
+    background: #cff;
+}
+
+
+
+/* Seletor filho - seleciona um elemento que é filho direto do outro*/
+p > span {
+    /* Seleciona quaisquer elemento <span> que são filhos de um elemento <p>, (mas não outros elementos <span> na página)*/
+    font-weight: bold;
+}
+
+
+/* Selector de descendente - seleciona um elemento que é descendente do outro especificado (não apenas filho direto) */
+#cabecalho a {
+    /* Seleciona quaisquer elementos <a> que residem dentro do elemento #cabeçalho, mesmo se houver outros elementos aninhados entre eles */
+    text-decoration: none;
+    color: darkred;
+}
+
+
+/* Seletor de irmão adjacente - seleciona um elemento que é o irmão proximo do outro*/
+h1 + p {
+    /* Seleciona o primeiro elemento <p> depois de qualquer elemento <h1> (mas não outros elementos <p>)*/
+    color: #00e1ff;
+}
+
+
+/* Seletor de irmão geral - seleciona um elemento que é irmão de outro embora não precise ser o elemento diretamente precedente */
+h2 ~ p {
+    /* seleciona todo elementos <p> que são irmãos de um elemento <h2> (não precisam ser diretamente precedentes) */
+    font-size: 1.2em;
+}

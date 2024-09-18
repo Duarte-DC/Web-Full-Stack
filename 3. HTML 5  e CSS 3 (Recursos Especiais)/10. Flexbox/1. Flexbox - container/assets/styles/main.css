@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#conteudo {
+    background: #dcdcdc;
+    
+    height: 600px;
+
+    display: flex;
+
+        /* row, row-reverse, column, column-reverse */
+        flex-direction: row;
+
+        /* nowrap, wrap, wrap-reverse */
+        flex-wrap: nowrap;
+
+        /* flex-start, flex-end, center, space-between, space-around */
+        justify-content: space-around;
+
+        /* stretch, center, flex-start, flex-end, baseline */
+        align-items: center ;
+}
+    .item {
+        border: 1px solid #777;
+
+        background: white;
+
+        height: 100px;
+        width: 100px;
+
+        margin: 10px;
+    }

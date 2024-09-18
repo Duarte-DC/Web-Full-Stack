@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Classes do flexbox</title>
+        
+        <script src = "scripts/flexibility.js"></script>
+        <script src = "https://kit.fontawesome.com/e33cdef215.js" crossorigin = "anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- 
+                Flex container e flex itens 
+                » d-flex + direção
+                    - direções: flex-row, flex-column, flex-row-reverse
+            -->
+            <h2>Flex container e flex itens</h2>
+            <div class = "caixa d-flex flex-row-reverse">
+                <div class = "item">Flex item 1</div>
+                <div class = "item">Flex item 2</div>
+                <div class = "item">Flex item 3</div>
+            </div>
+
+            <br><br>
+
+            <!-- 
+                Alinhamento horizontal 
+                » d-flex + justify-content-<opção>
+                    - opções: start, center, end, around, between
+            -->
+            <h2>Alinhamento horizontal</h2>
+            <div class = "caixa d-flex justify-content-around">
+                <div class = "item">Flex item 1</div>
+                <div class = "item">Flex item 2</div>
+                <div class = "item">Flex item 3</div>
+            </div>
+
+            <br><br>
+
+            <!-- 
+                Colunas 
+                » d-flex + direção
+                    - direções: flex-column, flex-column-reverse
+            -->
+            <h2>Alinhamento Coluna</h2>
+            <div class = "caixa d-flex flex-column-reverse">
+                <div class = "item">Flex item 1</div>
+                <div class = "item">Flex item 2</div>
+                <div class = "item">Flex item 3</div>
+            </div>
+
+            <br><br>
+
+            <!-- 
+                Alinhamento vertical 
+                » d-flex + align-items-<opção>
+                    - opções: start, center, end, baseline, stretch
+            -->
+            <h2>Alinhamento Vertical</h2>
+            <div class = "caixa d-flex align-items-center">
+                <div class = "item">Flex item 1</div>
+                <div class = "item">Flex item 2</div>
+                <div class = "item">Flex item 3</div>
+            </div>
+
+            <br><br>
+
+            <!-- 
+                Alinhamento self 
+                » d-flex + align-self-<opção>
+                    - opções: start, center, end, baseline, stretch
+            -->
+            <h2>Alinhamento self</h2>
+            <div class = "caixa d-flex">
+                <div class = "item align-self-start">Flex item 1</div>
+                <div class = "item align-self-end">Flex item 2</div>
+                <div class = "item align-self-center">Flex item 3</div>
+                <div class = "item align-self-baseline">Flex item 2</div>
+                <div class = "item align-self-stretch">Flex item 3</div>
+            </div>
+        </div>
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

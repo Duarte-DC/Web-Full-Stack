@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Input Group</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body>
+    <!-- Grupo prepend -->
+        <h2>Grupo prepend</h2>
+        <div class = "input-group">
+            <span class = "input-group-text">@</span> 
+            <input type = "email" class = "form-control" placeholder = "e-mail">
+        </div>
+        
+    <!-- Grupo append -->
+        <h2 class = "mt-5">Grupo append</h2>
+        <div class = "input-group">
+            <input type = "email" class = "form-control" placeholder = "e-mail">
+            <span class = "input-group-text">@site.com</span>
+
+        </div>
+        
+    <!-- Url Customizada -->
+        <h2 class = "mt-5">Url customizada</h2>
+        <div class = "input-group">
+            <span class = "input-group-text">https://site.com.usuario/</span>
+            <input type = "text" class = "form-control" placeholder = "Digite o seu usuário">
+        </div>
+        
+    <!-- Moeda -->
+        <h2 class = "mt-5">Moeda</h2>
+        <div class = "input-group">
+            <span class = "input-group-text">MZN</span>
+            <input type = "number" class = "form-control" placeholder = "Digite um valor">
+            <span class = "input-group-text">,00</span>
+        </div>
+        
+    <!-- Chekbox / Radio -->
+        <h2 class = "mt-5">Checkbox/Radio</h2>
+        <div class = "input-group">
+            <div class = "input-group-text">
+                <input type = "checkbox" class = "form-check-input mt-0">
+            </div>
+            <input type = "text" class = "form-control">
+        </div>
+        <div class = "input-group mt-3">
+            <div class = "input-group-text">
+                <input type = "radio" class = "form-check-input mt-0">
+            </div>
+            <input type = "text" class = "form-control">
+        </div> 
+        
+    <!-- Multiplos inputs -->
+        <h2 class = "mt-5">Multiplos</h2>
+        <div class="input-group">
+            <span class = "input-group-text">e-mail / senha</span>
+            <input type = "email" class = "form-control" placeholder = "e-mail">
+            <input type = "password" class = "form-control" placeholder = "senha">
+        </div>
+        
+    <!-- Pesquisas -->
+        <h2 class = "mt-5">Pesquisas</h2>
+        <div class = "input-group">
+            <input type = "search" class = "form-control">
+            <button type = "button" class = "input-group-text btn btn-primary">Pesquisar</button>
+        </div>
+        
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

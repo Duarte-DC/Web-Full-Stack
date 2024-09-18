@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* limpar a formatação padrão */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    body {
+        font-size: 1em;
+        font-family: "Poppins", sans-serif;
+        background: #e6e6e6;
+    }
+        a {
+            text-decoration: none;
+        }
+
+/* Layout */
+
+/* Formatação do cabeçãlho */
+header {
+    background-color: #f7b600;
+    padding: 40px;
+
+    text-align: center;
+}
+
+    /* Formatação do logotipo */
+    header > .logotipo {
+        color: black;
+        padding: 0px 0px 20px 0px;
+    }
+        .logotipo > h1{
+            color: #4e4e4e;
+            font-size: 2.5em;
+        }
+        h1 > span {
+            color: white;
+        }
+
+        /* Formatação do menu */
+        nav > a:link, a:visited {
+            padding: 8px 12px;
+            color: #fff;
+        } 
+        nav > a:hover, a:active {
+            color: #f7b600;
+            background-color: #fff;
+        }
+
+/* Formatação do corpo */
+
+#principal {
+    width: 970px;
+    margin: 0px auto;
+}
+
+    /* Conteudo Principal */
+    .conteudo {
+        width: 660px;
+
+        float: left;
+    }
+        .post {
+            padding: 20px;
+            margin-bottom: 20px;
+
+            background-color: #fff;
+        }
+
+            .post > h2 {
+                color: #f7b600;
+            }
+            .post > span {
+                font-size: 0.8em;
+
+                border-bottom: 1px solid #f4f4f4;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+
+                display: block;
+            }
+            .post > a:link, a:visited, .texto > a:link, a:visited {
+                color: #f7b600;
+            }
+            .post > a:hover, a:active, .texto > a:hover, a:active {
+                text-decoration: underline;
+            }
+
+    /* Conteudo Lateral */
+    .janela {
+        width: 240px;
+        float: right;
+    }
+        .conteudoJanela {
+            background: #fff;
+
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+            .conteudoJanela > h3 {
+                color: #565656;
+                background: #ccc;
+
+                padding: 5px;
+            }
+            .texto {
+                font-size: 0.8em;
+                text-align: justify;
+                border-bottom: 1px dotted #ccc;
+            }
+    .conteudo, .janela {
+        padding: 15px;
+    }
+
+
+/* Formatação do rodapé */
+footer {
+    background: #ccc;
+
+    font-size: 0.8em;
+    text-align: center;
+
+    padding: 15px;
+
+    clear: both;
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* Fonte Baixada */
+@font-face {
+    font-family: "Lemon Milk";
+    src: url(../arquivos/LEMONMILK-Regular.woff);
+}
+@font-face {
+    font-family: Quicksand Book;
+    src: url(../arquivos/Quicksand_Book.woff);
+}
+
+.fonteBaixada h2 {
+    font-family: "Lemon Milk", sans-serif;
+}
+
+.fonteBaixada p {
+    font-family: Quicksand Book, sans-serif;
+}

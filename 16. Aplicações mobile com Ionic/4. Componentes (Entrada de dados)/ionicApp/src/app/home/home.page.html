@@ -1,0 +1,130 @@
+<ion-header [translucent] = "true">
+  <ion-toolbar>
+    <ion-title>
+      Entrada de dados
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content 
+  [fullscreen] = "true"
+  class = "ion-padding"
+>
+  <h3>Configuração de entrada (floating, fixed e stacked)</h3>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input 
+        label = "Nome: " 
+        labelPlacement = "floating"
+      >
+    </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input 
+        label = "E-mail: " 
+        type = "email"
+        labelPlacement = "stacked"
+      >
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+        label = "Numero de celular: "
+        type = "tel"
+        labelPlacement = "fixed"
+      >
+      </ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <br> <br>
+
+  <h3>Entrada de dados (value, placeholder e clearInput)</h3>  
+
+  <ion-item>
+    <ion-input
+      label = "Nome: "
+      value = "Ex: Duarte Charles"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      placeholder = "Seu e-mail aqui"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label = "Palavra Passe: "
+      labelPlacement = "floating"
+      type = "password"
+      [clearInput] = "true"
+    >
+    </ion-input>
+  </ion-item>
+
+  <br> <br>
+
+  <h3>Tipos de entradas de dados (text, number, password, tel, url, search)</h3>
+  <ion-item>
+    <ion-input
+      label = "Texto: "
+      labelPlacement = "floating"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label = "Numero: "
+      labelPlacement = "floating"
+      type = "number"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label = "Senha"
+      labelPlacement = "floating"
+      type = "password"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label = "Telefone/Celular"
+      labelPlacement = "floating"
+      type = "tel"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label = "Link"
+      labelPlacement = "floating"
+      type = "url"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      label = "Pesquisa"
+      labelPlacement = "floating"
+      type = "search"
+    >
+    </ion-input>
+  </ion-item>
+
+</ion-content>

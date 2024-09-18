@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Botões</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    
+    
+    <body style = "border: 1px solid; width: 600px; margin: 0 auto; padding-bottom: 200px;">
+        <!--
+            Botões 
+            » Formatação padrão: btn
+            » Formatações especificas:
+                btn-primary, btn-secondary, btn-success, btn-info,
+                btn-warning, btn-danger, btn-light, btn-dark, btn-link
+        -->
+        <h3>Botões</h3>
+        <button type = "button" class = "btn btn-primary mb-5">Clique</button>
+
+        
+        <h3>Botões com diferentes tags</h3>
+        <a href = "" class = "btn btn-link">Link</a>
+        <button type = "submit" class = "btn btn-info">Submeter</button> 
+        <input type = "button" value = "Botão" class = "btn btn-info"> 
+        <input type = "submit" value = "Input submeter" class = "btn btn-info">
+        <input type = "reset" value = "Reset" class = "btn btn-danger"> 
+        
+        <!--
+            Botões com contorno
+            » btn-outline-<formato>
+                formatos: primary, secondary, success, 
+                info, warning, danger, light, dark, link
+        -->    
+        <h3 class = "mt-5">Botões com contorno</h3>
+        <button type = "button"  class = "btn btn-outline-primary">Clique</button>
+
+        <!-- 
+            Tamanhos de botões
+            » opções: btn-lg, btn-sm, d-grid gap-2
+        -->
+        <h3 class = "mt-5">Tamanho dos botões</h3>
+        <button type = "button" class = "btn btn-success btn-lg">Grande</button>
+        <button type = "button" class = "btn btn-success">Normal</button>
+        <button type = "button" class = "btn btn-success btn-sm">Pequeno</button>
+        <br><br>
+        <div class = "d-grid gap-2">
+            <button type = "button" class = "btn btn-success">Block</button>
+        </div>
+
+        <!-- 
+            Estado dos botões
+            » opcões: active, disabled
+         -->
+        <h3 class = "mt-5">Estado de botões</h3>
+        <button type = "button" class = "btn btn-primary">Normal</button>
+        <button type = "button" class = "btn btn-primary active">Ativo</button>
+        <button type = "button" class = "btn btn-primary disabled">Inativo</button>
+        <br><br>
+        <button type = "button" class = "btn btn-primary" data-bs-toggle = "button">Alternar</button>
+        
+        <!-- Grupo de botões na horizontal -->
+        <h3 class = "mt-5">Grupos e botões - Horizontal</h3>
+        <div class = "btn-group">
+            <button type = "button" class = "btn btn-success">Esquerda</button>
+            <button type = "button" class = "btn btn-success">Centro</button>
+            <button type = "button" class = "btn btn-success">Direita</button>
+        </div>
+
+        <!-- Grupo de botões na vertical -->
+        <h3 class = "mt-5">Grupos e botões - Vertical</h3>
+        <div class = "btn-group-vertical">
+            <button type = "button" class = "btn btn-info">Topo</button>
+            <button type = "button" class = "btn btn-info">Centro</button>
+            <button type = "button" class = "btn btn-info">Fundo</button>
+        </div>
+
+        <!-- Toolbar de botões -->
+        <h3 class = "mt-5">Toolbar de botões</h3>
+        <div class = "btn-toolbar">
+            <div class = "btn-group">
+                <button type = "button" class = "btn btn-danger">1</button>
+                <button type = "button" class = "btn btn-danger">2</button>
+                <button type = "button" class = "btn btn-danger">3</button>
+            </div>
+
+            <div class = "btn-group">
+                <button type = "button" class = "btn btn-danger">4</button>
+                <button type = "button" class = "btn btn-danger">5</button>
+            </div>
+        </div>
+        
+        <!-- Botões dropdown -->
+        <h3 class = "mt-5">Botões dropdown</h3>
+        <div class = "dropdown">
+            <button type = "button" class = "btn btn-success dropdown-toggle data" data-bs-toggle = "dropdown">Clique</button>
+            <ul class = "dropdown-menu">
+                <li><a href = "" class = "dropdown-item">Link 1</a></li>
+                <li><a href = "" class = "dropdown-item">Link 2</a></li>
+                <li><a href = "" class = "dropdown-item">Link 3</a></li>
+            </ul>
+        </div>
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

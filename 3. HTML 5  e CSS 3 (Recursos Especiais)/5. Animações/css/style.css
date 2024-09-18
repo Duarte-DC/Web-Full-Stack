@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+#caixa {
+    background: #111;
+
+    height: 300px;
+    width: 300px;
+
+    margin: 20px;
+
+    position: relative;
+    /*
+    animation-name: animacaoCaixa;
+    animation-duration: 10s;
+    animation-delay: 3s; (Tempo de espera para inicio da animação)
+    animation-iteration-count: 5; (Número de vezes que a anmação é executada)
+    animation-direction: alternate; (alterna a direção da animação)
+    */
+
+    animation: animacaoCaixa 5s 3s 5 alternate;
+    -moz-animation: animacaoCaixa 5s 3s 5 alternate;
+    -o-animation: animacaoCaixa 5s 3s 5 alternate;
+    -webkit-animation: animacaoCaixa 5s 3s 5 alternate;
+}
+
+/* Animação */
+@keyframes animacaoCaixa {
+    from { /*Estado inicial*/
+        background: #111;
+
+        border-radius: 0px;
+
+        top: 0;
+        left: 0;
+    }
+
+    to { /*Estado final*/
+        background: #777;
+
+        border-radius: 300px;
+
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@-moz-keyframes animacaoCaixa { /*Suporte Mozila*/
+    from {
+        background: #111;
+
+        border-radius: 0px;
+
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: #777;
+
+        border-radius: 300px;
+
+        top: 200px;
+        left: 200px;
+    }
+}
+@-o-keyframes animacaoCaixa { /*Suporte Opera Mini*/
+    from {
+        background: #111;
+
+        border-radius: 0px;
+        
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: #777;
+
+        border-radius: 300px;
+
+        top: 200px;
+        left: 200px;
+    }
+}
+@-webkit-keyframes animacaoCaixa { /*Suporte Chrome, Safari*/
+    from {
+        background: #111;
+
+        border-radius: 0px;
+
+        top: 0;
+        left: 0;
+    }
+    to {
+        background: #777;
+
+        border-radius: 300px;
+
+        top: 200px;
+        left: 200px;
+    }
+}

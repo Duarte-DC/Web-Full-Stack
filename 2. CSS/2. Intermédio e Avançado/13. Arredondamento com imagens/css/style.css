@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 
+.caixa {
+    width: 400px;
+    background: #dedede url(../imagens/topo2.png) no-repeat left top;
+}
+    .caixa h2 {
+        padding: 20px 20px 0 20px;
+    }
+    .caixa p {
+        padding: 0 20px 20px 20px;
+    }
+        p.texto2 {
+            background: url(../imagens/baixo2.png) no-repeat left bottom;
+        }
+*/
+
+.caixa {
+    width: 400px;
+    background: url(../imagens/fundo-arredondamento.png) repeat-y;
+}
+    .caixa h2 {
+        background: url(../imagens/topo2.png) no-repeat left top;
+        padding: 20px 20px 0 20px;
+    }
+    .caixa p {
+        text-align: justify;
+
+        padding: 0 20px 0 20px;
+
+        margin-bottom: 0;
+    }
+    /* 
+        p.texto2 {
+            background: url(../imagens/baixo2.png) no-repeat left bottom;
+        }
+    */
+        .ultimo {
+            background: url(../imagens/baixo2.png) no-repeat left top;
+            
+            width: 400px;
+            height: 24px;
+        }

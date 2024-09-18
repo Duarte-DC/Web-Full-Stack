@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!-- Favicon --> <link rel = "shortcut icon" href = "#" type = "image/x-icon">
+         
+        <!-- Bootstrap CSS --> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!-- Normalize CSS --> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        <!-- Style CSS --> <link rel = "stylesheet" href = "assets/styles/main.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- Flexibility --> <script src = "scripts/flexibility.js"></script>
+        <!-- Icons --> <script src = "https://kit.fontawesome.com/e33cdef215.js" crossorigin = "anonymous"></script>
+        
+        <title>Calculadora</title>
+    </head>
+    
+    <body>
+        <div class = "container">
+            <div class = " row">
+                <div class = "col d-flex justify-content-center">
+                    <br>
+                    <div class = "calculadora">
+                        <input
+                            type = "text" 
+                            id = "resultado" class = "form-control resultado"
+                            placeholder = "0"
+                            disabled 
+                        >
+
+                        <div class = "row">
+                            <button 
+                                onclick = "calcular ('acao', 'c')" 
+                                id = ""    class = "btn btn-danger btn-lg limpar font-weight-light"
+                                >c</button>
+                            <button 
+                                onclick = "calcular ('acao', '/')" 
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >/</button>
+                            <button 
+                                onclick = "calcular ('acao', '*')" 
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >*</button>
+                        </div>
+                        
+                        <div class = "row">
+                            <button 
+                                onclick = "calcular ('valor', '7')"
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    7
+                            </button>
+                            <button 
+                                onclick = "calcular ('valor', '8')"
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    8
+                            </button>
+                            <button 
+                                onclick = "calcular ('valor', '9')"
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    9
+                            </button>
+                            <button 
+                                onclick = "calcular ('acao', '-')" 
+                                class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    -
+                            </button>
+                        </div>
+
+                        <div class = "row">
+                            <button 
+                                onclick = "calcular ('valor', '4')"
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    4
+                            </button>
+                            <button 
+                                onclick = "calcular ('valor', '5')"
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    5
+                            </button>
+                            <button 
+                                onclick = "calcular ('valor', '6')"
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    6
+                            </button>
+                            <button 
+                                onclick = "calcular ('acao', '+')" 
+                                id = ""    class = "btn btn-dark btn-lg font-weight-light"
+                                >
+                                    +
+                            </button>
+                        </div>
+
+                        <div class = "row">
+                            <button 
+                                onclick = "calcular ('valor', '1')"
+                                id = ""    class="btn btn-dark btn-lg font-weight-light"
+                                >
+                                    1
+                            </button>
+                            <button 
+                                onclick = "calcular ('valor', '2')"
+                                id = ""    class="btn btn-dark btn-lg font-weight-light"
+                                >
+                                    2
+                            </button>
+                            <button 
+                                onclick = "calcular ('valor', '3')"
+                                id = ""    class="btn btn-dark btn-lg font-weight-light"
+                                >
+                                    3
+                            </button>
+                            <button 
+                                onclick = "calcular ('acao', '=')" 
+                                id = ""    class="btn btn-warning btn-lg calcular"
+                                >
+                                    =
+                            </button>
+                        </div>
+
+                        <div class="row" style = "margin-top: -60px;">
+                            <button 
+                                onclick = "calcular ('valor', '0')"
+                                id = ""    class="btn btn-dark btn-lg font-weight-light zero"
+                                >
+                                    0
+                            </button>
+                            <button 
+                                onclick = "calcular ('acao', '.')" 
+                                id = ""    class="btn btn-dark btn-lg font-weight-light"
+                                >
+                                    .
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--                   ------                   < Javascript >                   ------                   -->
+        <script src = "scripts/main.js"></script>
+
+        <!-- Bootstrap Javascript -->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+        
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>

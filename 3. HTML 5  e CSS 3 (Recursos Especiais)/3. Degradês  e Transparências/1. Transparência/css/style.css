@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#caixa {
+    background: url(../imagens/camera.png);
+    color: #999;
+
+    text-align: justify;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    height: 300px;
+    width: 300px;
+
+    margin: 20px;
+    padding: 20px;
+}
+    #caixa h1 {
+        background: rgba(255, 255, 255, 0.664);
+        color: #111;
+
+        text-align: center;
+
+    }

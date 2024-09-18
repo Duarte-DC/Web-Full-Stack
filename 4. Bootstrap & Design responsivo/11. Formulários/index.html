@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang = "pt-pt">
+
+    <head>
+        <!--Bootstrap CSS--> <link rel = "stylesheet" href = "assets/styles/bootstrap.min.css">
+        <!--Style CSS--> <link rel = "stylesheet" href = "assets/styles/main.css">
+        <!--Normalize CSS--> <link rel = "stylesheet" href = "assets/styles/normalize.css">
+        
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <!--[if lt IE 9]>
+	        <script src = "scripts/html5shiv.js"></script>
+        <![endif]-->
+
+        <title>Formulários</title>
+
+        <script src = "scripts/flexibility.js"></script>
+    </head>
+
+    <body>
+        <!-- 
+            Formulários
+            » class: form-control-<opção>
+            » opções: sm, lg
+        -->
+        <form action = "">
+            <!-- Caixas de texto -->
+            <section class = "mb-3">
+                <label for = "usuario">Usuário</label>
+                <input type = "text" class = "form-control form-control-sm" id = "usuario" placeholder = "Digite o seu usuário" required>
+            </section>
+
+            <section class = "mb-3">
+                <label for = "mail">E-mail</label>
+                <input type = "email" class = "form-control form-control-sm" id = "mail" placeholder = "Digite o seu e-mail" required>
+                <small class = "form-text">E-mail será validado</small>
+            </section>
+            
+            <!-- Select -->
+            <section class = "mb-3">
+                <label for = "estados">Estados</label>
+                <select name = "" id = "estados" class = "form-control form-control-sm">
+                    <option value = "" class = "">Selecionar</option>
+                    <option value = "" class = "">Maputo Provincia</option>
+                    <option value = "" class = "">Maputo Cidade</option>
+                    <option value = "" class = "">Gaza</option>
+                    <option value = "" class = "">Inhambane</option>
+                    <option value = "" class = "">Manica</option>
+                    <option value = "" class = "">Sofala</option>
+                    <option value = "" class = "">Tete</option>
+                    <option value = "" class = "">Zambezia</option>
+                    <option value = "" class = "">Nampula</option>
+                    <option value = "" class = "">Niassa</option>
+                    <option value = "" class = "">Cabo Delgado</option>
+                </select>
+            </section>
+
+            <!-- textarea -->
+
+            <section class = "mb-3">
+                <label for = "mensagem">Mensagem</label>
+                <textarea id = "mensagem" rows = "3" class = "form-control form-control-sm"></textarea>
+            </section>
+
+            <!-- File input -->
+            <section class = "mb-3">
+                <label for = "arquivo">Arquivo</label>
+                <input type = "file" id = "arquivo" class = "form-control-file form-control-sm">
+            </section>
+
+            <!-- File input - Custom -->
+            <section class = "mb-3">
+                <label for = "arquivo">Selecione arquivos</label>
+                <input type = "file" id = "arquivo" class = "form-control form-control-sm">
+            </section>
+
+            <br><br>
+
+            <!-- Range -->
+            <section class = "mb-3">
+                <label for = "satisfacao">Satisfação</label>
+                <input type = "range" id = "satisfacao" min = "0" max = "5" class = "form-range">
+            </section>
+
+            <!-- botão -->
+            <input type = "submit" value = "Salvar" class = "btn btn-sm btn-primary">
+        </form>
+
+        <br><br><br>
+
+        <!-- formulario Inline -->
+        <form action = "" class = "row">
+            <section class = "col">
+                <input type = "text" id = "" class = "form-control form-control-sm me-2" placeholder = "Digite o seu usuário">
+            </section>
+
+            <section class = "col">
+                <input type = "password" id = "" class = "form-control form-control-sm" placeholder = "Digite a sua senha">
+            </section>
+
+            <section class = "col">
+                <input type = "submit" value = "Logar" class = "btn btn-sm btn-primary">
+            </section>
+        </form>
+
+        <br><br><br>
+
+        <!-- 
+            Validação de formulários 
+            » classes: is-valid, is-invalid, valid-feedback, invalid-feedback
+        -->
+        <form action = "" class = "row">
+            <section class = "col">
+                <input type = "text" id = "email-usuario" class = "form-control form-control-sm is-valid" placeholder = "Digite o seu e-mail">
+                <div class = "valid-feedback">
+                    E-mail valido
+                </div>
+            </section>
+
+            <section class = "col">
+                <input type = "password" id = "senha-usuario" class = "form-control form-control-sm is-invalid" placeholder = "Digite a sua senha">
+                <div class = "invalid-feedback">
+                    Senha Invalida
+                </div>
+            </section>
+
+            <section class = "col">
+                <input type = "submit" value = "Logar" class="btn btn-sm btn-primary">
+            </section>
+
+        </form>
+
+        <!--Bootstrap Javascript-->
+        <script src = "scripts/bootstrap.bundle.min.js"></script>
+
+        <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+            integrity = "sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+            crossorigin = "anonymous">
+        </script>
+
+        <script src = "scripts/bootstrap.min.js"></script>
+    </body>
+
+</html>
